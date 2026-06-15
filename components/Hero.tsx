@@ -65,7 +65,7 @@ export function Hero() {
                 Dwight Davis
               </div>
               <div className="font-body text-xs uppercase tracking-eyebrow text-paper mt-2">
-                Boise Marketing Guy · 20+ years experience
+                Boise Marketing Guy
               </div>
             </div>
           </div>
