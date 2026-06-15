@@ -2,34 +2,35 @@ import Image from "next/image";
 import Link from "next/link";
 import { Nav } from "./Nav";
 
+// Hero uses its own wider container (max-w-7xl, ~1280px) instead of the
+// site-wide 960px cap, mirroring storybrand.com which lets the hero
+// breathe edge-to-edge. Text column is 3fr, portrait 2fr — text gets
+// ~740px which is enough to hold "WE HELP BOISE BUSINESSES" on one
+// line at the SB-scale type size.
 export function Hero() {
   return (
     <section
-      className="relative bg-navy text-white overflow-hidden flex flex-col"
+      className="relative bg-navy text-white overflow-hidden"
       style={{ minHeight: "100vh" }}
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(180,162,105,0.12),_transparent_60%)] pointer-events-none" />
 
       <Nav />
 
-      <div className="container-content flex-1 grid md:grid-cols-[1.5fr_1fr] gap-8 md:gap-10 items-center relative pt-20 pb-6">
+      <div className="mx-auto w-full max-w-[1280px] px-6 grid md:grid-cols-[3fr_2fr] gap-10 md:gap-14 items-start relative pt-24 md:pt-28 pb-12">
         <div className="text-left">
           <h1
-            className="leading-[0.92]"
-            style={{
-              // Down from 5.25rem to 3.8rem max. At 1366px this is ~3.5rem
-              // which wraps the 60-char H1 into ~3 lines instead of 6.
-              fontSize: "clamp(2rem, 3.6vw, 3rem)",
-            }}
+            className="leading-[0.92] uppercase"
+            style={{ fontSize: "clamp(2.4rem, 4.6vw, 4rem)" }}
           >
-            We help small businesses in Boise{" "}
-            <span className="accent">grow</span>{" "}
-            without the marketing struggle.
+            We help Boise businesses<br />
+            <span className="accent">grow</span> without the<br />
+            marketing struggle.
           </h1>
 
           <p
-            className="mt-4 max-w-xl font-body text-white/85 leading-relaxed"
-            style={{ fontSize: "clamp(0.95rem, 1.05vw, 1.15rem)" }}
+            className="mt-6 max-w-2xl font-body text-white/85 leading-relaxed"
+            style={{ fontSize: "clamp(1rem, 1.15vw, 1.2rem)" }}
           >
             If you&apos;re tired of pouring money into marketing that
             doesn&apos;t bring customers, you&apos;re not alone. We get it.
@@ -37,7 +38,7 @@ export function Hero() {
             20 years.
           </p>
 
-          <div className="mt-6 flex flex-col sm:flex-row gap-3">
+          <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <Link href="#schedule" className="btn-red">Let&apos;s chat today</Link>
             <Link href="#solution" className="btn-pill bg-transparent text-white border-2 border-white shadow-none">
               See how it works
@@ -45,10 +46,9 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Smaller portrait so the text column gets more width. */}
         <div
           className="relative mx-auto md:mx-0 aspect-square"
-          style={{ width: "clamp(180px, 22vw, 280px)" }}
+          style={{ width: "clamp(280px, 32vw, 460px)" }}
         >
           <div className="absolute inset-0 rounded-full bg-paper" />
           <div className="absolute inset-3 rounded-full overflow-hidden">
@@ -57,16 +57,16 @@ export function Hero() {
               alt="Dwight Davis, Boise Marketing Guy"
               fill
               priority
-              sizes="(max-width: 768px) 200px, 320px"
+              sizes="(max-width: 768px) 280px, 460px"
               className="object-cover object-top"
             />
           </div>
 
-          <div className="absolute -top-2 -left-2 sm:-left-4 z-10 bg-ink text-white px-3 py-2 shadow-crisp-sm rotate-[-6deg]">
-            <div className="font-display text-sm leading-none uppercase tracking-tight">
+          <div className="absolute -top-3 -left-2 sm:-left-6 z-10 bg-ink text-white px-4 py-2 shadow-crisp-sm rotate-[-6deg]">
+            <div className="font-display text-base leading-none uppercase tracking-tight">
               Dwight Davis
             </div>
-            <div className="font-body text-[9px] uppercase tracking-eyebrow text-paper mt-1">
+            <div className="font-body text-[10px] uppercase tracking-eyebrow text-paper mt-1">
               Boise Marketing Guy
             </div>
           </div>
