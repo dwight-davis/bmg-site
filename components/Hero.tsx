@@ -12,14 +12,14 @@ export function Hero() {
 
       <Nav />
 
-      <div className="container-content flex-1 grid md:grid-cols-[1.5fr_1fr] gap-8 md:gap-10 items-center relative pt-24 pb-10">
+      <div className="container-content flex-1 grid md:grid-cols-[1.5fr_1fr] gap-8 md:gap-10 items-center relative pt-20 pb-6">
         <div className="text-left">
           <h1
             className="leading-[0.92]"
             style={{
               // Down from 5.25rem to 3.8rem max. At 1366px this is ~3.5rem
               // which wraps the 60-char H1 into ~3 lines instead of 6.
-              fontSize: "clamp(2.2rem, 4.2vw, 3.8rem)",
+              fontSize: "clamp(2rem, 3.6vw, 3rem)",
             }}
           >
             We help small businesses in Boise{" "}
@@ -28,7 +28,7 @@ export function Hero() {
           </h1>
 
           <p
-            className="mt-5 max-w-xl font-body text-white/85 leading-relaxed"
+            className="mt-4 max-w-xl font-body text-white/85 leading-relaxed"
             style={{ fontSize: "clamp(0.95rem, 1.05vw, 1.15rem)" }}
           >
             If you&apos;re tired of pouring money into marketing that
@@ -37,7 +37,7 @@ export function Hero() {
             20 years.
           </p>
 
-          <div className="mt-7 flex flex-col sm:flex-row gap-3">
+          <div className="mt-6 flex flex-col sm:flex-row gap-3">
             <Link href="#schedule" className="btn-red">Let&apos;s chat today</Link>
             <Link href="#solution" className="btn-pill bg-transparent text-white border-2 border-white shadow-none">
               See how it works
@@ -48,7 +48,7 @@ export function Hero() {
         {/* Smaller portrait so the text column gets more width. */}
         <div
           className="relative mx-auto md:mx-0 aspect-square"
-          style={{ width: "clamp(200px, 24vw, 320px)" }}
+          style={{ width: "clamp(180px, 22vw, 280px)" }}
         >
           <div className="absolute inset-0 rounded-full bg-paper" />
           <div className="absolute inset-3 rounded-full overflow-hidden">
