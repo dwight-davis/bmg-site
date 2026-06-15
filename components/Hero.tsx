@@ -10,14 +10,15 @@ import { Nav } from "./Nav";
 export function Hero() {
   return (
     <section
-      className="relative bg-navy text-white overflow-hidden"
+      className="relative bg-navy text-white overflow-hidden flex flex-col"
       style={{ minHeight: "100vh" }}
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(180,162,105,0.12),_transparent_60%)] pointer-events-none" />
 
       <Nav />
 
-      <div className="mx-auto w-full max-w-[1280px] px-6 grid md:grid-cols-[3fr_2fr] gap-10 md:gap-14 items-start relative pt-24 md:pt-28 pb-12">
+      <div className="flex-1 flex items-center">
+        <div className="mx-auto w-full max-w-[1280px] px-6 grid md:grid-cols-[3fr_2fr] gap-10 md:gap-14 items-center relative pt-8 pb-12">
         <div className="text-left">
           <h1
             className="leading-[0.92] uppercase"
@@ -70,6 +71,7 @@ export function Hero() {
               Boise Marketing Guy
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
