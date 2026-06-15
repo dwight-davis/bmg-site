@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text: #151515;
+    --muted: #555555;
+  }
+  body {
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+  }
+  /* Display headlines: Anton at scale. StoryBrand-style ALL CAPS, tight
+     letter-spacing, wide horizontal feel. */
+  h1, h2 {
+    font-family: "Anton", Impact, "Helvetica Inserat", system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 0.95;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  /* Pill CTA, hard-offset shadow — the SB signature move. */
+  .btn-pill {
+    @apply inline-flex items-center justify-center rounded-pill font-body
+           font-bold uppercase tracking-eyebrow text-sm px-7 py-4
+           shadow-crisp transition-transform;
+  }
+  .btn-pill:hover { transform: translate(-1px, -1px); }
+  .btn-pill:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 0 #000; }
+
+  .btn-red { @apply btn-pill bg-red text-white; }
+  .btn-dark { @apply btn-pill bg-ink text-white; }
+  .btn-outline {
+    @apply btn-pill bg-transparent text-ink border-2 border-ink shadow-none;
+  }
+
+  /* Eyebrow label — small all-caps tracker above section titles. */
+  .eyebrow {
+    @apply font-body text-xs font-bold uppercase tracking-eyebrow text-red;
+  }
+
+  /* Container helpers. Real measured widths from the SB CSS. */
+  .container-content { @apply mx-auto w-full max-w-content px-6; }
+  .container-column { @apply mx-auto w-full max-w-column px-6; }
+
+  /* Section vertical padding, matches SB's 60-90px section rhythm. */
+  .section { @apply py-20 md:py-24; }
+
+  /* The red emphasis span — single noun phrase in red inside an H1. */
+  .accent { color: #e01f26; }
+}
