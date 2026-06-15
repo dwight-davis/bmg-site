@@ -40,28 +40,32 @@ export function Hero() {
             </div>
           </div>
 
-          <div
-            className="relative mx-auto md:mx-0 aspect-square"
-            style={{ width: "clamp(280px, 32vw, 460px)" }}
-          >
-            <div className="absolute inset-0 rounded-full bg-paper" />
-            <div className="absolute inset-3 rounded-full overflow-hidden">
-              <Image
-                src="/dwight.png"
-                alt="Dwight Davis, Boise Marketing Guy"
-                fill
-                priority
-                sizes="(max-width: 768px) 280px, 460px"
-                className="object-cover object-top"
-              />
+          <div className="flex flex-col items-center md:items-start gap-5">
+            <div
+              className="relative aspect-square"
+              style={{ width: "clamp(280px, 32vw, 460px)" }}
+            >
+              <div className="absolute inset-0 rounded-full bg-paper" />
+              <div className="absolute inset-3 rounded-full overflow-hidden">
+                <Image
+                  src="/dwight.png"
+                  alt="Dwight Davis, Boise Marketing Guy"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 280px, 460px"
+                  className="object-cover object-top"
+                />
+              </div>
             </div>
 
-            <div className="absolute -top-3 -left-2 sm:-left-6 z-10 bg-ink text-white px-4 py-2 shadow-crisp-sm rotate-[-6deg]">
-              <div className="font-display text-base leading-none uppercase tracking-tight">
+            {/* Clean attribution caption below the portrait. Replaces the
+                random-looking rotated chip with something purposeful. */}
+            <div className="text-center md:text-left">
+              <div className="font-display uppercase tracking-tight leading-none" style={{ fontSize: "clamp(1.5rem, 2vw, 1.875rem)" }}>
                 Dwight Davis
               </div>
-              <div className="font-body text-[10px] uppercase tracking-eyebrow text-paper mt-1">
-                Boise Marketing Guy
+              <div className="font-body text-xs uppercase tracking-eyebrow text-paper mt-2">
+                Boise Marketing Guy · 20+ years experience
               </div>
             </div>
           </div>
