@@ -1,30 +1,29 @@
 import Link from "next/link";
 
+// Value Proposition section, from the StoryBrand.ai wireframe: the four
+// outcomes a customer gets when they work with us. Light icon column over
+// short benefit line, single CTA below.
 const OUTCOMES = [
-  { glyph: "◎", title: "A clear message that attracts the right customers" },
-  { glyph: "↗", title: "Marketing spend that pays for itself" },
-  { glyph: "▲", title: "Visible growth, month over month" },
-  { glyph: "✓", title: "Less time worrying. More time running the business" },
+  { glyph: "◎", title: "Get tailored solutions that fit your business." },
+  { glyph: "↗", title: "Receive ongoing support from industry experts." },
+  { glyph: "▲", title: "Watch your leads and sales grow steadily." },
+  { glyph: "✓", title: "Leverage 20+ years of successful strategies." },
 ];
 
 export function Outcomes() {
   return (
     <section id="solution" className="bg-ink text-white">
       <div className="container-content section">
-        <div className="text-center max-w-column mx-auto mb-10">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="font-body text-xs font-bold uppercase tracking-eyebrow text-paper mb-4">
             The solution
           </div>
           <h2 className="text-4xl sm:text-5xl md:text-6xl">
-            <span className="accent">Marketing</span> that finally{" "}
-            <span className="accent">works.</span>
+            Achieve growth with{" "}
+            <span className="accent">expert digital solutions.</span>
           </h2>
-          <p className="font-body text-base md:text-lg text-white/75 mt-6">
-            When your marketing is clear, customers engage, your phone rings,
-            and your business grows. We build the strategy that gets you there.
-          </p>
-          <p className="font-body text-base md:text-lg text-white/75 mt-4">
-            <span className="font-bold text-white">With us, you&apos;ll get:</span>
+          <p className="font-serif italic text-xl md:text-2xl text-white/85 mt-5">
+            Experience clarity, control, and increased sales.
           </p>
         </div>
 
@@ -41,17 +40,9 @@ export function Outcomes() {
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-          <Link href="#schedule" className="btn-red">Let&apos;s chat today</Link>
-          <Link href="#" className="btn-pill bg-transparent text-white border-2 border-white shadow-none">
-            See how it works
-          </Link>
+        <div className="flex justify-center">
+          <Link href="#schedule" className="btn-red">Schedule an appointment</Link>
         </div>
-
-        <p className="text-center font-body text-sm text-white/60 mt-10 max-w-column mx-auto">
-          For more than 20 years, we have helped hundreds of Boise businesses
-          grow their revenue. Now it&apos;s your turn.
-        </p>
       </div>
     </section>
   );

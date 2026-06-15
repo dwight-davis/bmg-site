@@ -18,22 +18,21 @@ export function Hero() {
               className="leading-[0.92] uppercase"
               style={{ fontSize: "clamp(2.4rem, 4.6vw, 4rem)" }}
             >
-              We help Boise businesses<br />
-              <span className="accent">grow</span> without the<br />
-              marketing struggle.
+              Transform your marketing<br />
+              into a <span className="accent">revenue machine.</span>
             </h1>
 
             <p
               className="mt-6 max-w-2xl font-body text-white/85 leading-relaxed"
               style={{ fontSize: "clamp(1rem, 1.15vw, 1.2rem)" }}
             >
-              If you&apos;re tired of pouring money into marketing that
-              doesn&apos;t bring customers, you&apos;re not alone. We get it.
-              We&apos;ve been helping small businesses grow for more than 20 years.
+              Are you spending too much on ineffective ads? Stop pouring
+              money into marketing that doesn&apos;t bring customers.
+              Let&apos;s build a plan that does.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <Link href="#schedule" className="btn-red">Let&apos;s chat today</Link>
+              <Link href="#schedule" className="btn-red">Schedule an appointment</Link>
               <Link href="#solution" className="btn-pill bg-transparent text-white border-2 border-white shadow-none">
                 See how it works
               </Link>
