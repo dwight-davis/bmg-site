@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Guide() {
   return (
-    <section className="bg-bg-muted">
+    <section id="guide" className="bg-bg-muted">
       <div className="container-content section grid md:grid-cols-5 gap-12 items-center">
         <div className="md:col-span-2 flex justify-center md:justify-start">
           <div className="rounded-full overflow-hidden border-8 border-ink shadow-crisp w-64 h-64 sm:w-72 sm:h-72">

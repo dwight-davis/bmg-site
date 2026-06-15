@@ -6,7 +6,7 @@ const STEPS = [
 
 export function Plan() {
   return (
-    <section className="bg-bg">
+    <section id="plan" className="bg-bg">
       <div className="container-content section">
         <div className="text-center mb-14">
           <div className="eyebrow mb-4">A simple plan</div>

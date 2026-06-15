@@ -9,7 +9,7 @@ const OUTCOMES = [
 
 export function Outcomes() {
   return (
-    <section className="bg-ink text-white">
+    <section id="solution" className="bg-ink text-white">
       <div className="container-content section">
         <div className="text-center max-w-column mx-auto mb-10">
           <div className="font-body text-xs font-bold uppercase tracking-eyebrow text-paper mb-4">

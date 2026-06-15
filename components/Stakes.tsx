@@ -1,6 +1,6 @@
 export function Stakes() {
   return (
-    <section className="bg-bg">
+    <section id="stakes" className="bg-bg">
       <div className="container-content section">
         <div className="text-center max-w-column mx-auto mb-14">
           <h2 className="text-4xl sm:text-5xl md:text-6xl">
