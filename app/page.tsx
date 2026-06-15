@@ -1,5 +1,7 @@
 import { Hero } from "@/components/Hero";
-import { Problem } from "@/components/Problem";
+import { Empathy } from "@/components/Empathy";
+import { Outcomes } from "@/components/Outcomes";
+import { Trust } from "@/components/Trust";
 import { Guide } from "@/components/Guide";
 import { Plan } from "@/components/Plan";
 import { Stakes } from "@/components/Stakes";
@@ -11,7 +13,10 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
-      <Problem />
+      <Empathy />
+      <section id="solution"></section>
+      <Outcomes />
+      <Trust />
       <Guide />
       <Plan />
       <Stakes />
