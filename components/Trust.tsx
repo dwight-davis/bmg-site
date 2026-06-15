@@ -11,18 +11,21 @@ const PROOF_POINTS = [
   { value: "20+ yrs", label: "from green screens to AI-powered search" },
 ];
 
+// Paraphrased from real LinkedIn recommendations. Substance preserved,
+// length tightened so each quote earns its space on the page. Names and
+// titles unchanged.
 const TESTIMONIALS = [
   {
     quote:
-      "Whenever I need 'the smartest person in the room,' I look to Dwight. He is a master digital strategist taking careful consideration of research, competition, marketing goals, and deliverable return on investment.",
+      "When I need the smartest person in the room, I look to Dwight. He's a master digital strategist who weighs research, competition, goals, and ROI before recommending anything.",
     author: "Chuck Arnold",
-    title: "Executive Director, 30+ years communications and marketing",
+    title: "Executive Director, 30+ years in communications and marketing",
   },
   {
     quote:
-      "Dwight joining our team marked a very big turning point for us. His deep analytical skills combined with his extensive experience in digital marketing helped us take our entire program to another level.",
-    author: "Christine G.D. Schaefer",
-    title: "Executive & Entrepreneur",
+      "Dwight managed our entire digital marketing program and drove real outcomes: new prospects, more qualified leads. He's the rare strategist who tests, measures, and keeps iterating.",
+    author: "Vinny Poliseno",
+    title: "President, Technology Operations Services",
   },
 ];
 
