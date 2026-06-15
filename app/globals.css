@@ -57,3 +57,33 @@
   /* The red emphasis span — single noun phrase in red inside an H1. */
   .accent { color: #e01f26; }
 }
+
+/* WordPress-imported body prose. Applied via .wp-body around dangerouslySetInnerHTML
+   so headings, paragraphs, lists, and inline links from the source content sit
+   inside the SB-shaped reading column without bleeding into other surfaces. */
+.wp-body p { margin: 0 0 1.1em; line-height: 1.65; }
+.wp-body p:last-child { margin-bottom: 0; }
+.wp-body h2 {
+  font-family: "Anton", Impact, "Helvetica Inserat", system-ui, sans-serif;
+  font-weight: 400; text-transform: uppercase; letter-spacing: -0.01em;
+  font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1; margin: 2em 0 0.6em;
+}
+.wp-body h3 {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-weight: 700; font-size: 1.25rem; line-height: 1.3;
+  margin: 1.8em 0 0.5em; text-transform: none;
+}
+.wp-body ul, .wp-body ol { margin: 0 0 1.1em 1.25em; padding: 0; }
+.wp-body ul { list-style: disc; }
+.wp-body ol { list-style: decimal; }
+.wp-body li { margin: 0.35em 0; line-height: 1.6; }
+.wp-body a { color: #e01f26; text-decoration: underline; text-underline-offset: 3px; }
+.wp-body a:hover { color: #000028; }
+.wp-body strong { font-weight: 700; color: #151515; }
+.wp-body em { font-style: italic; }
+.wp-body blockquote {
+  border-left: 3px solid #e01f26; padding: 0.4em 0 0.4em 1.1em;
+  margin: 1.4em 0; font-style: italic; color: #333;
+}
+.wp-body hr { border: 0; border-top: 1px solid #ddd; margin: 2em 0; }
+

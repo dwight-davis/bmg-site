@@ -1,20 +1,32 @@
 import Link from "next/link";
 
-export function CTA() {
+// CTA for Tier-2 pages — Calendly book + phone fallback. Per-page heading
+// + sub copy so the close ties to the specific narrative on that page.
+
+export function PageCTA({
+  eyebrow = "Ready when you are",
+  heading,
+  headingAccent,
+  sub,
+}: {
+  eyebrow?: string;
+  heading: string;
+  headingAccent?: string;
+  sub: string;
+}) {
   return (
     <section id="schedule" className="relative bg-navy text-white">
       <div className="absolute inset-0 bg-gradient-to-b from-navy via-ink to-ink opacity-95" />
       <div className="container-content section text-center relative">
         <div className="font-body text-xs font-bold uppercase tracking-eyebrow text-paper mb-4">
-          Ready when you are
+          {eyebrow}
         </div>
         <h2 className="text-4xl sm:text-5xl md:text-6xl mb-6 max-w-4xl mx-auto">
-          Let&apos;s build the marketing your business{" "}
-          <span className="accent">actually deserves.</span>
+          {heading}{" "}
+          {headingAccent ? <span className="accent">{headingAccent}</span> : null}
         </h2>
         <p className="font-serif italic text-xl md:text-2xl text-white/90 mb-10 max-w-column mx-auto">
-          If you&apos;re overwhelmed by marketing, our services are your
-          solution.
+          {sub}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">

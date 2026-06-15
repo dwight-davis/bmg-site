@@ -1,0 +1,75 @@
+{
+  "_note": "Per-page hero + empathy overrides. Keyed by post slug. Where an entry exists the Tier-2 template uses these strings instead of falling back to the WP-derived defaults. Seeded with three proof pages (roofing / boise / seo local-gold-aeo); the remaining 221 pages render from defaults until each gets a hand-crafted hero pass.",
+
+  "industries": {
+    "roofing": {
+      "hero_eyebrow": "Marketing for Idaho roofers",
+      "hero_h1": "ROOFERS:",
+      "hero_accent": "STOP LOSING JOBS TO THE COMPANY WITH MORE GOOGLE REVIEWS.",
+      "hero_sub": "When a homeowner finds a leak, they search, scroll, and call the top three companies that look legitimate. We make sure you're one of them.",
+      "empathy_eyebrow": "I know how this feels",
+      "empathy_heading": "You do great work. The phone still",
+      "empathy_heading_accent": "doesn't ring.",
+      "pains": [
+        "Storms come through and the chasers from out of state get the jobs you should have won.",
+        "You're paying for Google Ads but the leads are tire-kickers and insurance shoppers.",
+        "Your competitor with thirty more reviews is winning the click before you even show up.",
+        "You can't tell which marketing dollar is actually bringing in roof tear-offs."
+      ],
+      "empathy_summary": "It isn't your work. It's that homeowners decide before they call, and you're not in the decision.",
+      "stakes_neg": "Another season of chasers winning storm jobs. Another month of paying for clicks that don't turn into roofs.",
+      "stakes_pos": "You become the roofer homeowners and insurance adjusters know by name. The phone rings with real jobs, not tire-kickers.",
+      "cta_heading": "Let's get your roofing business",
+      "cta_accent": "found and called.",
+      "cta_sub": "Free 30-minute strategy call. We look at your Google profile, your reviews, your ads, and tell you exactly where the leak is."
+    }
+  },
+
+  "locations": {
+    "boise": {
+      "hero_eyebrow": "Marketing in Boise, Idaho",
+      "hero_h1": "BOISE BUSINESSES:",
+      "hero_accent": "BE THE ONE CUSTOMERS CALL FIRST.",
+      "hero_sub": "Boise is growing fast and so is the competition. New people in town pick the business that looks established online. We make sure that's you.",
+      "empathy_eyebrow": "I know how this feels",
+      "empathy_heading": "You're great at what you do.",
+      "empathy_heading_accent": "Customers can't find you.",
+      "pains": [
+        "New Boise residents are searching for what you sell and finding a competitor with better SEO.",
+        "Your ad budget feels like it disappears with nothing measurable to show.",
+        "Google Maps shows three businesses above yours and you don't know how to move up.",
+        "You're DIY-ing marketing on top of running the business and something always slips."
+      ],
+      "empathy_summary": "It isn't that Boise doesn't want what you sell. It's that the customers who want it find someone else first.",
+      "stakes_neg": "Boise keeps growing and the businesses with sharper marketing keep winning the new arrivals.",
+      "stakes_pos": "You become the Boise name people recommend, recognize, and call without checking three competitors first.",
+      "cta_heading": "Let's grow your Boise business",
+      "cta_accent": "the right way.",
+      "cta_sub": "Free 30-minute strategy call. I look at your site, your Google profile, and your ads. Tell you what's working, what isn't, and where to start."
+    }
+  },
+
+  "service_tiers": {
+    "seo__local-gold": {
+      "hero_eyebrow": "Local Gold + AEO",
+      "hero_h1": "RANK FOR THE SEARCHES",
+      "hero_accent": "THAT ACTUALLY BRING CUSTOMERS.",
+      "hero_sub": "A monthly SEO program built for local Idaho businesses, now tuned for AI search. Real keywords, real content, real reporting. No vanity rankings.",
+      "empathy_eyebrow": "I know how this feels",
+      "empathy_heading": "You've paid for SEO before",
+      "empathy_heading_accent": "and got nothing.",
+      "pains": [
+        "Your last SEO company sent reports with rankings on keywords no real customer types.",
+        "Your competitors are showing up in Google AI Overviews and you're not.",
+        "Your Google Business Profile sits half-filled while reviews stack up for the shop down the street.",
+        "You can't tell if the SEO work is making the phone ring or just making invoices."
+      ],
+      "empathy_summary": "Real SEO is local intent, AI visibility, and content that gets you cited. Not keyword stuffing.",
+      "stakes_neg": "Another year invisible in the searches your customers are actually doing.",
+      "stakes_pos": "You become the first local result, the AI-cited answer, and the business getting the calls.",
+      "cta_heading": "Let's get you ranking",
+      "cta_accent": "where it counts.",
+      "cta_sub": "Free 30-minute strategy call. We pull your current rankings, look at your Google profile, and tell you the three SEO moves that will move the needle."
+    }
+  }
+}

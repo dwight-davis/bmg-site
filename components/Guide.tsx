@@ -23,25 +23,31 @@ export function Guide() {
             Dwight Davis,{" "}
             <span className="accent">Boise Marketing Guy.</span>
           </h2>
-          <p className="font-body text-lg text-ink/85 mb-4">
-            We understand how frustrating ineffective marketing can be.
+          <p className="font-body text-lg text-ink/85 mb-4 leading-relaxed">
+            I started in my mom&apos;s basement on an IBM PC JR, writing
+            databases on green screens before personal computers were
+            normal. Twenty years later I&apos;m still here, except now
+            I&apos;m placing $450,000 a month in paid media and watching
+            every dollar to make sure it&apos;s bringing real customers,
+            not just clicks.
           </p>
-          <p className="font-body text-lg text-ink/85 mb-8">
-            With over 20 years of experience, we have helped hundreds of
-            businesses grow and obtain measurable results.
+          <p className="font-body text-lg text-ink/85 mb-8 leading-relaxed">
+            I built Boise Marketing Guy because I&apos;ve seen too many
+            small businesses pour money into marketing that doesn&apos;t
+            move the needle. Yours shouldn&apos;t be one of them.
           </p>
 
           <div className="space-y-3 font-body text-base">
             <div>
-              <span className="text-ink/60 text-sm">Direct line</span>{" "}
-              <a href="tel:+12087617016" className="font-bold text-ink hover:text-red">
-                (208) 761-7016
+              <span className="text-ink/60 text-sm">Talk to Maya, my 24/7 assistant</span>{" "}
+              <a href="tel:+12089575828" className="font-bold text-ink hover:text-red">
+                (208) 957-5828
               </a>
             </div>
             <div>
-              <span className="text-ink/60 text-sm">Maya, my assistant (24/7)</span>{" "}
-              <a href="tel:+12089575828" className="font-bold text-ink hover:text-red">
-                (208) 957-5828
+              <span className="text-ink/60 text-sm">Or email</span>{" "}
+              <a href="mailto:dwight@boisemarketingguy.com" className="font-bold text-ink hover:text-red">
+                dwight@boisemarketingguy.com
               </a>
             </div>
           </div>

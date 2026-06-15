@@ -20,6 +20,9 @@ RUN addgroup --system --gid 1001 nodejs && adduser --system --uid 1001 nextjs
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+# data/ holds the WP export and per-page overrides; lib/wp-content.ts reads
+# from it. Required at runtime in case any route falls back to dynamic render.
+COPY --from=builder --chown=nextjs:nodejs /app/data ./data
 USER nextjs
 EXPOSE 8080
 ENV PORT=8080 HOSTNAME="0.0.0.0"
