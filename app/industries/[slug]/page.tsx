@@ -9,6 +9,8 @@ import { WpBody } from "@/components/page/WpBody";
 import { PageStakes } from "@/components/page/PageStakes";
 import { PageCTA } from "@/components/page/PageCTA";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/schema/JsonLd";
+import { breadcrumbSchema } from "@/lib/seo";
 
 // Static generate every industry from the WP export.
 export function generateStaticParams() {
@@ -50,6 +52,11 @@ export default async function IndustryPage({
 
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Industries", url: "/industries/" },
+        { name: item.title, url: `/industries/${slug}/` },
+      ])} />
       <PageHero
         eyebrow={spec.hero_eyebrow ?? `Marketing for ${item.title}`}
         h1={spec.hero_h1 ?? `${item.title.toUpperCase()}:`}

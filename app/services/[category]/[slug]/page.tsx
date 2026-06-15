@@ -14,6 +14,8 @@ import { WpBody } from "@/components/page/WpBody";
 import { PageStakes } from "@/components/page/PageStakes";
 import { PageCTA } from "@/components/page/PageCTA";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/schema/JsonLd";
+import { breadcrumbSchema, serviceSchema } from "@/lib/seo";
 
 // Static generate every service tier. The WP route segments are
 // "/services/<category>/<slug>/" and the slug already carries the
@@ -62,6 +64,18 @@ export default async function ServiceTierPage({
 
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Services", url: "/services/" },
+        { name: catLabel, url: `/services/${category}/` },
+        { name: item.title, url: `/services/${category}/${slug}/` },
+      ])} />
+      <JsonLd data={serviceSchema({
+        name: item.title,
+        description: item.excerpt || firstP,
+        url: `/services/${category}/${slug}/`,
+        category: catLabel,
+      })} />
       <PageHero
         eyebrow={spec.hero_eyebrow ?? catLabel}
         h1={spec.hero_h1 ?? item.title.toUpperCase() + "."}

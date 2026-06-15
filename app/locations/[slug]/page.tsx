@@ -9,6 +9,8 @@ import { WpBody } from "@/components/page/WpBody";
 import { PageStakes } from "@/components/page/PageStakes";
 import { PageCTA } from "@/components/page/PageCTA";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/schema/JsonLd";
+import { breadcrumbSchema } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getLocations().map((l) => ({ slug: l.slug }));
@@ -54,6 +56,11 @@ export default async function LocationPage({
 
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Locations", url: "/locations/" },
+        { name: name, url: `/locations/${slug}/` },
+      ])} />
       <PageHero
         eyebrow={spec.hero_eyebrow ?? `Marketing in ${name}`}
         h1={spec.hero_h1 ?? `${name.toUpperCase()}:`}

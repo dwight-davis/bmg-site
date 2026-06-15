@@ -8,10 +8,13 @@ import { Stakes } from "@/components/Stakes";
 import { Transformation } from "@/components/Transformation";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/schema/JsonLd";
+import { personSchema } from "@/lib/seo";
 
 export default function HomePage() {
   return (
     <main>
+      <JsonLd data={personSchema()} />
       <Hero />
       <Empathy />
       <section id="solution"></section>
