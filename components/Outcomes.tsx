@@ -15,9 +15,6 @@ export function Outcomes() {
     <section id="solution" className="bg-ink text-white">
       <div className="container-content section">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="font-body text-xs font-bold uppercase tracking-eyebrow text-paper mb-4">
-            The solution
-          </div>
           <h2 className="text-4xl sm:text-5xl md:text-6xl">
             Achieve growth with{" "}
             <span className="accent">expert digital solutions.</span>

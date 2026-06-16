@@ -18,7 +18,6 @@ export function Guide() {
         </div>
 
         <div className="md:col-span-3">
-          <div className="eyebrow mb-4">Meet your guide</div>
           <h2 className="text-4xl sm:text-5xl md:text-6xl mb-6">
             Dwight Davis,{" "}
             <span className="accent">Boise Marketing Guy.</span>

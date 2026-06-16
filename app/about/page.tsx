@@ -66,9 +66,6 @@ export default function AboutPage() {
             </div>
           </div>
           <div>
-            <div className="font-body text-xs uppercase tracking-eyebrow text-paper mb-4">
-              Meet your guide
-            </div>
             <h1 className="font-display uppercase tracking-tight leading-[0.95] text-5xl md:text-6xl lg:text-7xl">
               Dwight Davis,{" "}
               <span className="accent">Boise Marketing Guy.</span>
