@@ -5,8 +5,10 @@ import {
   firstParagraph,
 } from "@/lib/wp-content";
 import { getLocationSpec } from "@/lib/page-specs";
+import { getLocationExtras } from "@/lib/location-extras";
 import { PageHero } from "@/components/page/PageHero";
 import { WpBody } from "@/components/page/WpBody";
+import { LocationStats } from "@/components/page/LocationStats";
 import { PageCTA } from "@/components/page/PageCTA";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/schema/JsonLd";
@@ -50,6 +52,7 @@ export default async function LocationPage({
   if (!item) notFound();
 
   const spec = getLocationSpec(slug);
+  const extras = getLocationExtras(slug);
   const name = shortName(item.title);
   const firstP = firstParagraph(item.content_html, 240);
 
@@ -81,6 +84,10 @@ export default async function LocationPage({
       <section id="about">
         <WpBody html={item.content_html} />
       </section>
+
+      {extras ? (
+        <LocationStats extras={extras} cityShortName={name} />
+      ) : null}
 
       <PageCTA
         heading={

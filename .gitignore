@@ -8,3 +8,7 @@ build/
 .vercel
 *.tsbuildinfo
 next-env.d.ts
+
+# WP MySQL dump backups (binary, gitignored)
+data/wp-backup/*.sql
+data/wp-backup/*.sql.gz

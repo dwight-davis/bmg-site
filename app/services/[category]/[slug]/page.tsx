@@ -6,11 +6,14 @@ import {
   firstParagraph,
 } from "@/lib/wp-content";
 import { getPriceForTier } from "@/lib/service-tier-prices";
+import { getTierExtras, parseFaqs } from "@/lib/service-tier-extras";
 import { getServiceTierSpec } from "@/lib/page-specs";
 import { SERVICE_CATEGORY_LABELS } from "@/lib/wp-types";
 import { PageHero } from "@/components/page/PageHero";
 import { WpBody } from "@/components/page/WpBody";
 import { PricingCard } from "@/components/page/PricingCard";
+import { TierDeliverables } from "@/components/page/TierDeliverables";
+import { TierFaqs } from "@/components/page/TierFaqs";
 import { RelatedTiers } from "@/components/page/RelatedTiers";
 import { PageCTA } from "@/components/page/PageCTA";
 import { Footer } from "@/components/Footer";
@@ -58,6 +61,8 @@ export default async function ServiceTierPage({
 
   const spec = getServiceTierSpec(slug);
   const price = getPriceForTier(slug);
+  const extras = getTierExtras(slug);
+  const faqs = extras ? parseFaqs(extras.faqs_html) : [];
   const catLabel = SERVICE_CATEGORY_LABELS[category] ?? category.replace(/-/g, " ");
   const firstP = firstParagraph(item.content_html, 240);
 
@@ -101,7 +106,18 @@ export default async function ServiceTierPage({
         <WpBody html={item.content_html} />
       </section>
 
+      {extras ? (
+        <TierDeliverables
+          month1={extras.deliverables_month_1}
+          month2={extras.deliverables_month_2}
+          ongoing={extras.deliverables_ongoing}
+          footerInclusion={extras.footer_inclusions}
+        />
+      ) : null}
+
       <PricingCard price={price} tierTitle={item.title} />
+
+      <TierFaqs faqs={faqs} />
 
       <RelatedTiers
         current={item}

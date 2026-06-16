@@ -1,0 +1,482 @@
+{
+  "american-falls": {
+    "location_type": "city",
+    "city_name": "American Falls",
+    "county": "Power",
+    "population": "4500",
+    "region_name": "Southeast Idaho",
+    "region_slug": "southeast-idaho",
+    "region_anchor": "Pocatello",
+    "what_we_do": "<p>We help local businesses show up when people search. A feed supplier or equipment dealer in American Falls competes for attention across a wide geographic area, so search visibility matters. We build that through local SEO, Google Business Profile optimization, and content that answers the questions your customers actually type.</p>\n<p>Paid search and social ads work when you need to reach specific audiences fast. Whether you&rsquo;re targeting ag operators, regional contractors, or families in the Pocatello metro, we set up campaigns that control cost and track results. No wasted spend on broad, untargeted reach.</p>\n<p>Your website should load quickly and work on mobile. We design sites that convert visitors into calls or form fills, and we optimize checkout flows and lead capture for businesses that sell products or services online. Clean layout, fast performance, no clutter.</p>\n<p>Southeast Idaho&rsquo;s economy runs on relationships and repeat business. We help you stay visible with email sequences, review management, and social content that keeps your name in front of past customers without feeling pushy. Consistent presence builds trust over time.</p>"
+  },
+  "ammon": {
+    "location_type": "city",
+    "city_name": "Ammon",
+    "county": "Bonneville",
+    "population": "20000",
+    "region_name": "Eastern Idaho",
+    "region_slug": "eastern-idaho",
+    "region_anchor": "Idaho Falls",
+    "what_we_do": "<p>We handle SEO for local retail, professional services, and contractors competing in the Idaho Falls market. That means showing up when someone in Ammon searches for what you do, not just hoping referrals keep coming.</p>\n<p>Paid search and social ads work when you need leads now, particularly for home services, automotive, and family-focused businesses serving the Bonneville County corridor. We write ads, manage budgets, and track what converts.</p>\n<p>Web design and CRO for businesses that need a site that actually works on mobile, loads fast, and turns traffic into calls or form fills. A lot of Ammon businesses inherited a site from 2015 that doesn&rsquo;t cut it anymore.</p>\n<p>AI visibility and directory accuracy matter when Google&rsquo;s pulling answers from sources other than your website. We make sure your business shows up correctly across LLMs, voice search, and local map results.</p>\n<p>Social content for businesses that want to stay visible to the Eastern Idaho family market without spending all day on Instagram. We handle the posting, you handle the work.</p>"
+  },
+  "blackfoot": {
+    "location_type": "city",
+    "city_name": "Blackfoot",
+    "county": "Bingham",
+    "population": "12000",
+    "region_name": "Eastern Idaho",
+    "region_slug": "eastern-idaho",
+    "region_anchor": "Idaho Falls",
+    "what_we_do": "<p><strong>SEO work here means showing up when someone searches for Blackfoot services.</strong> Most local businesses lose traffic because their Google Business Profile sits incomplete or their website doesn&rsquo;t answer the search intent of ag suppliers, farm equipment dealers, or family-owned retail operations competing with Idaho Falls.</p>\n<p><strong>Paid search and social campaigns tie directly to regional purchasing cycles.</strong> Eastern Idaho&rsquo;s economy moves with planting seasons, INL payroll cycles, and the academic calendar at BYU-Idaho. We build campaigns that account for those rhythms instead of treating Blackfoot like a generic small town.</p>\n<p><strong>Web design and CRO work focuses on what converts a farm operator or regional buyer.</strong> That means fast-loading mobile sites, clear service descriptions, and contact forms that don&rsquo;t require three clicks. We&rsquo;ve watched too many Idaho businesses lose leads to poorly structured checkout flows or buried phone numbers.</p>\n<p><strong>AI visibility and local citations matter more than most Blackfoot businesses realize.</strong> When ChatGPT or Perplexity pulls business recommendations for Eastern Idaho, the businesses with structured data and consistent NAP listings show up. We make sure yours is one of them.</p>"
+  },
+  "boise": {
+    "location_type": "city",
+    "city_name": "Boise",
+    "county": "Ada",
+    "population": "237242",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p>SEO for Boise businesses means showing up when someone types &ldquo;CPA near Boise&rdquo; or &ldquo;software consulting Idaho&rdquo; into Google. We build keyword strategies around the terms your customers use, optimize your site&rsquo;s technical foundation, and earn links that signal authority to search engines. No invented rankings, just consistent organic visibility work.</p>\n<p>Paid search and social ads let you test messaging fast. We run Google Ads and Meta campaigns for Boise law firms, B2B service providers, and retail shops that need leads this month, not next year. Budgets stay tight, targeting stays local or regional, and we adjust based on what converts.</p>\n<p>Web design and conversion work goes hand-in-hand. A site that loads slowly or buries the contact form costs you customers. We build fast, mobile-friendly sites and then test headlines, calls-to-action, and page layouts to improve the percentage of visitors who actually reach out.</p>\n<p>AI-powered search and voice queries are changing how people find local businesses. We optimize for Google&rsquo;s AI Overviews, ChatGPT citations, and voice assistants so your business shows up even when someone asks a question instead of clicking a traditional link. Boise&rsquo;s tech-savvy market adopts these tools early.</p>\n<p>Social media and content marketing support the rest. We help Boise brands stay visible on LinkedIn, Instagram, and Facebook without turning every post into a sales pitch. Consistent, useful content builds trust before the first phone call.</p>"
+  },
+  "burley": {
+    "location_type": "city",
+    "city_name": "Burley",
+    "county": "Cassia",
+    "population": "11500",
+    "region_name": "Magic Valley",
+    "region_slug": "magic-valley",
+    "region_anchor": "Twin Falls",
+    "what_we_do": "<p><strong>SEO and local search</strong> matter when you&rsquo;re competing for contractor searches, equipment suppliers, or processing facility inquiries across the Magic Valley. We build keyword strategies around what people actually type when they need dairy services, ag supplies, or logistics support in Cassia County.</p>\n<p><strong>Paid search and social ads</strong> let you reach decision-makers in food production, farm operations, and regional manufacturing without waiting six months for organic rankings. We write ad copy that speaks to procurement timelines and seasonality, not generic B2B jargon.</p>\n<p><strong>Web design and conversion work</strong> because a slow-loading site or a buried contact form costs you leads when a plant manager is comparing vendors on mobile between shifts. We fix the friction points that kill inquiries in ag and processing markets.</p>\n<p><strong>AI visibility and schema markup</strong> help Google understand your service area when someone searches for &ldquo;casein supplier near Burley&rdquo; or &ldquo;dairy equipment repair Magic Valley.&rdquo; Structured data and business profiles make you findable when it counts.</p>"
+  },
+  "caldwell": {
+    "location_type": "city",
+    "city_name": "Caldwell",
+    "county": "Canyon",
+    "population": "66516",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p><strong>Search visibility</strong> matters when Caldwell buyers start their research on Google. We build SEO strategies for food processors, ag suppliers, logistics companies, and professional services firms competing against Nampa and Meridian counterparts. Organic rankings drive qualified traffic without the recurring cost of paid ads.</p>\n<p><strong>Paid search and social campaigns</strong> work when you need faster traction. We run Google Ads and Meta campaigns for Caldwell retailers, healthcare practices, and B2B service providers targeting Canyon County and wider Treasure Valley buyers. Budget discipline and conversion tracking keep cost-per-lead predictable.</p>\n<p><strong>Web design and conversion optimization</strong> turn visitors into customers. We rebuild outdated sites for manufacturers, distributors, and local service businesses that lose leads to clunky forms and slow mobile experiences. Clean navigation, fast load times, and clear calls-to-action improve close rates.</p>\n<p><strong>AI visibility</strong> is the next search battleground. ChatGPT, Perplexity, and Google&rsquo;s AI overviews now surface answers before traditional blue links. We optimize content so Caldwell businesses show up in AI-generated recommendations, protecting market share as search behavior shifts.</p>\n<p><strong>Social media management</strong> keeps Caldwell brands visible between purchase cycles. We handle content calendars, community engagement, and platform strategy for businesses that lack in-house bandwidth but recognize the cost of going dark on Facebook, Instagram, or LinkedIn.</p>"
+  },
+  "central-idaho": {
+    "location_type": "region",
+    "city_name": "",
+    "county": "",
+    "population": "",
+    "region_name": "Central Idaho",
+    "region_slug": "",
+    "region_anchor": "Salmon",
+    "what_we_do": ""
+  },
+  "chubbuck": {
+    "location_type": "city",
+    "city_name": "Chubbuck",
+    "county": "Bannock",
+    "population": "17500",
+    "region_name": "Southeast Idaho",
+    "region_slug": "southeast-idaho",
+    "region_anchor": "Pocatello",
+    "what_we_do": "<p><strong>SEO and local search</strong> matter when your customer base stretches from Pocatello to Blackfoot and competes with Yellowstone Avenue retail. We optimize for &ldquo;near me&rdquo; queries, Google Business Profile visibility, and the long-tail searches that drive foot traffic and phone calls.</p>\n<p><strong>Paid search and social ads</strong> let you target households across Bannock County without the waste of regional broadcast. We build campaigns around ISU student cycles, seasonal mining employment patterns, and LDS cultural calendar peaks when relevant to your offer.</p>\n<p><strong>Web design and conversion rate optimization</strong> turn traffic into revenue. Clean mobile layouts, fast load times, ADA compliance, and conversion paths built for the practical, value-conscious buyer common in Southeast Idaho markets.</p>\n<p><strong>AI-driven visibility and content</strong> help Chubbuck businesses show up in voice search, ChatGPT queries, and the answer engines that increasingly mediate discovery. We structure your content so AI systems cite you as the local authority in your category.</p>"
+  },
+  "coeur-dalene": {
+    "location_type": "city",
+    "city_name": "Coeur d'Alene",
+    "county": "Kootenai",
+    "population": "57000",
+    "region_name": "North Idaho (Panhandle)",
+    "region_slug": "panhandle",
+    "region_anchor": "Coeur d'Alene",
+    "what_we_do": "<p>We help Coeur d&rsquo;Alene businesses show up when visitors and new residents search for lodging, dining, contractors, and professional services. SEO work focuses on the terms tourists type before they arrive and the queries new transplants run after they buy property.</p>\n<p>Paid search and social campaigns target seasonal surges, wedding season bookings, and West Coast buyers shopping real estate or home improvement. We align budgets to high-intent windows and pull back when search volume drops.</p>\n<p>Web design and UX for hospitality, vacation rental, and service businesses. Sites need to load fast on mobile, convert browsers into bookers, and handle inquiry spikes without breaking. We build for that.</p>\n<p>AI visibility work ensures your business appears in ChatGPT, Perplexity, and voice search results when someone asks for &ldquo;best lakefront restaurant near Coeur d&rsquo;Alene&rdquo; or &ldquo;general contractor North Idaho.&rdquo; Conversion rate optimization tightens booking flows, contact forms, and calls-to-action so traffic turns into revenue, not just visits.</p>"
+  },
+  "eagle": {
+    "location_type": "city",
+    "city_name": "Eagle",
+    "county": "Ada",
+    "population": "36300",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p><strong>Search visibility</strong> matters here because Eagle&rsquo;s professional services, real estate, and tech-adjacent companies compete in a metro where buyer intent starts with a Google search. We build SEO strategies around how people actually look for services in Ada County, not generic best practices.</p>\n<p><strong>Paid search and social campaigns</strong> work when they&rsquo;re tied to local demand patterns. We run Google Ads and Meta campaigns for Eagle businesses selling into Boise&rsquo;s broader market, tracking cost-per-lead and return, not just impressions.</p>\n<p><strong>Web design and conversion work</strong> focus on turning traffic into calls or form fills. A fast site with clear messaging converts better than a slow one with stock photos, especially when you&rsquo;re competing against Boise and Meridian firms in the same search results.</p>\n<p><strong>AI visibility</strong> is newer but increasingly relevant. We help Eagle companies show up in ChatGPT, Perplexity, and voice search results, which matter when buyers skip traditional search engines entirely.</p>\n<p><strong>Social media and content</strong> give you a way to stay visible between purchase cycles. Consistent posting, local case studies, and audience-appropriate messaging keep you in front of prospects who aren&rsquo;t ready to buy today but will be in six months.</p>"
+  },
+  "eastern-idaho": {
+    "location_type": "region",
+    "city_name": "",
+    "county": "",
+    "population": "",
+    "region_name": "Eastern Idaho",
+    "region_slug": "",
+    "region_anchor": "Idaho Falls",
+    "what_we_do": ""
+  },
+  "emmett": {
+    "location_type": "city",
+    "city_name": "Emmett",
+    "county": "Gem",
+    "population": "7400",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p>We handle search visibility for service businesses, ag suppliers, and retail operations that depend on locals and pass-through traffic from Highway 52. SEO work here means showing up when someone searches for feed stores, HVAC contractors, or farm equipment near Emmett, not just Boise.</p>\n<p>Paid search and social campaigns target Gem County buyers and the broader Treasure Valley when you need regional reach. We run Google Ads and Meta campaigns sized for realistic budgets, not enterprise spend.</p>\n<p>Web design and conversion work focuses on fast-loading sites that work on rural internet and convert visitors into phone calls or form fills. We build for the customer who finds you on mobile while sitting in a truck.</p>\n<p>We also help with AI visibility, making sure your business shows up accurately when someone asks ChatGPT or Perplexity where to find services in Emmett. That layer matters more every month.</p>"
+  },
+  "fruitland": {
+    "location_type": "city",
+    "city_name": "Fruitland",
+    "county": "Payette",
+    "population": "6500",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p>We help Fruitland companies show up when locals search. SEO work means your orchard supply business, insurance office, or construction contractor appears when someone nearby types your service into Google. Paid search and Meta ads pull demand from across Payette County and into Nampa or Caldwell when your service area extends that far.</p>\n<p>Social content and email sequences work well for ag suppliers, equipment dealers, and service trades where trust builds over repeat interactions. We write posts that sound like a neighbor, not a corporate account.</p>\n<p>Website and design projects give your business a digital storefront that works on phones, loads fast, and converts visitors into calls or form fills. We&rsquo;ve built sites for everything from seed distributors to HVAC companies.</p>\n<p>AI visibility matters as voice search and ChatGPT responses reshape how people find local services. Conversion rate optimization tightens up your funnel so more of your traffic turns into actual customers.</p>"
+  },
+  "garden-city": {
+    "location_type": "city",
+    "city_name": "Garden City",
+    "county": "Ada",
+    "population": "13380",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p><strong>SEO and local search</strong> matter here because Garden City&rsquo;s Chinden Boulevard commercial strip competes with both Boise metro traffic and hyper-local searches. We optimize for proximity signals, Google Business Profile authority, and the kind of keyword work that gets you found when someone searches &ldquo;near me&rdquo; from Eagle Island or the Bench.</p>\n<p><strong>Paid search and social ads</strong> let you target specific customer segments without waiting months for organic rankings. Whether you&rsquo;re a brewpub pulling weekend crowds, a specialty retailer, or a B2B service provider working with Treasure Valley contractors, we build campaigns that control cost-per-acquisition and turn ad spend into measurable pipeline.</p>\n<p><strong>Web design and conversion rate optimization</strong> turn traffic into leads. A lot of Garden City businesses rely on walk-in or drive-by volume, but your site still does heavy lifting after hours. We build fast-loading, mobile-first experiences that make it easy to book, quote, or contact, and we test what actually moves the needle.</p>\n<p><strong>AI-driven visibility and content</strong> help you show up in ChatGPT, Perplexity, and voice search results. As zero-click search grows, we structure your content so AI engines cite you as the answer, not just another option in a list.</p>"
+  },
+  "gooding": {
+    "location_type": "city",
+    "city_name": "Gooding",
+    "county": "Gooding",
+    "population": "3800",
+    "region_name": "Magic Valley",
+    "region_slug": "magic-valley",
+    "region_anchor": "Twin Falls",
+    "what_we_do": "<p>We help dairy operations, ag suppliers, food processors, and Main Street retail get found when buyers search for what they offer. That means SEO built around how people search for feed suppliers, veterinary services, equipment dealers, and processing capacity in the Magic Valley. Paid search and social campaigns targeted to Gooding County, Jerome, Twin Falls, and the Sun Valley corridor when seasonal demand kicks in.</p>\n<p>For Main Street shops, restaurants, and service providers, we build fast-loading websites that work on rural broadband and mobile networks, with clear calls to action and local schema markup so Google understands your service area. If you&rsquo;re competing for tourist traffic heading to or from Sun Valley, we structure paid campaigns to capture intent at the right mile markers.</p>\n<p>We also work with regional businesses on CRO, making sure your site converts the traffic you&rsquo;re paying for. That means testing checkout flows for e-commerce, tightening up contact forms for B2B lead gen, and ensuring your Google Business Profile is accurate for local pack visibility. No fluff, just mechanics that drive calls and orders.</p>\n<p>AI-powered search is changing how people find local businesses. We optimize for LLM citations and voice search so you show up when someone asks their phone for the closest feed store or the best place to eat in Gooding. It&rsquo;s early innings, but the businesses that show up in AI answers will own the next decade of local search.</p>"
+  },
+  "hailey": {
+    "location_type": "city",
+    "city_name": "Hailey",
+    "county": "Blaine",
+    "population": "9800",
+    "region_name": "Magic Valley",
+    "region_slug": "magic-valley",
+    "region_anchor": "Twin Falls",
+    "what_we_do": "<p>We build SEO campaigns for contractors, property management firms, and professional services competing in a market where Sun Valley proximity drives high search volume and competitive pricing. Paid search and display work for hospitality, retail, and real estate firms that need to capture shoulder-season traffic and convert out-of-town buyers into bookings.</p>\n<p>Social and content marketing support tour operators, gear shops, and wellness businesses reaching both locals and the second-home market. Web design projects serve everyone from HVAC and builders serving new construction in Hailey and Bellevue to accountants and legal practices with clientele across the valley.</p>\n<p>AI visibility and schema work help service businesses show up in voice search and map queries when visitors ask their phones where to eat, rent equipment, or find a last-minute plumber. Conversion optimization turns high-intent traffic into form fills and phone calls, critical when your competition includes Ketchum firms with bigger budgets and tighter brand recognition.</p>"
+  },
+  "hayden": {
+    "location_type": "city",
+    "city_name": "Hayden",
+    "county": "Kootenai",
+    "population": "17000",
+    "region_name": "North Idaho (Panhandle)",
+    "region_slug": "panhandle",
+    "region_anchor": "Coeur d'Alene",
+    "what_we_do": "<p>We help Hayden businesses show up when prospects search. SEO work for contractors, landscapers, and home service providers means ranking for &ldquo;Hayden plumber&rdquo; or &ldquo;Kootenai County HVAC&rdquo; when homeowners need help. We structure content around real search intent, not keyword stuffing.</p>\n<p>Paid search and social campaigns work well for hospitality and retail businesses serving the Lake Coeur d&rsquo;Alene tourism corridor. We run Google Ads and Meta campaigns that target seasonal visitors, second-home owners, and year-round residents with different offers and different urgency.</p>\n<p>For restaurants, retail shops, and professional services, we build local social presences that reflect North Idaho&rsquo;s outdoor culture and small-town pace. Posts that feel like a neighbor talking, not a brand broadcasting. Web design and conversion work focus on mobile speed and clear calls to action, because most Hayden searches happen on phones, often while people are driving or standing in a parking lot.</p>\n<p>AI visibility matters more now. ChatGPT, Perplexity, and Google&rsquo;s AI overviews pull business info from structured sources. We make sure your business shows up in those answers, not just traditional blue links. For a town growing as fast as Hayden, being visible in AI-generated recommendations is the difference between being found and being overlooked.</p>"
+  },
+  "idaho-falls": {
+    "location_type": "city",
+    "city_name": "Idaho Falls",
+    "county": "Bonneville",
+    "population": "67725",
+    "region_name": "Eastern Idaho",
+    "region_slug": "eastern-idaho",
+    "region_anchor": "Idaho Falls",
+    "what_we_do": "<p>We handle SEO for Idaho Falls companies competing in specialized markets. INL contractors, engineering firms, and healthcare providers need visibility when decision-makers search for technical capabilities or patient services. We build search authority in niches where keyword competition is real but local context matters.</p>\n<p>Paid search and social campaigns work when you&rsquo;re targeting a defined geography or demographic. Idaho Falls has a concentrated professional class and a faith-based consumer base that responds to specific messaging. We run Google Ads and Meta campaigns that respect local buying patterns without wasting spend on broad audiences.</p>\n<p>Web design and conversion optimization matter when your site serves dual purposes: lead generation for B2B services and trust-building for retail or healthcare. We design for fast mobile performance and clear calls to action, because Eastern Idaho users expect clarity and straightforward navigation.</p>\n<p>AI visibility strategies help technical and medical practices show up in ChatGPT, Perplexity, and voice search results. As generative engines reshape how people find local services, we optimize for the knowledge graphs and citation systems that power those tools. It&rsquo;s not theoretical. Prospects are already asking AI for recommendations in Idaho Falls.</p>"
+  },
+  "jerome": {
+    "location_type": "city",
+    "city_name": "Jerome",
+    "county": "Jerome",
+    "population": "13000",
+    "region_name": "Magic Valley",
+    "region_slug": "magic-valley",
+    "region_anchor": "Twin Falls",
+    "what_we_do": "<p><strong>Search visibility for dairy, ag suppliers, and food processors.</strong> Jerome-area buyers start their research online, whether they&rsquo;re sourcing equipment, looking for veterinary services, or comparing feed suppliers. We build SEO and local search campaigns that put your business in front of those searches when intent is highest, not just traffic for its own sake.</p>\n<p><strong>Paid search and social for retail and service businesses.</strong> Main Avenue shops, auto services, and family restaurants face competition from Twin Falls and online alternatives. We run Google and Facebook campaigns that target Jerome ZIP codes and nearby commuter towns, turning ad spend into measurable foot traffic and phone calls.</p>\n<p><strong>Web design and conversion optimization.</strong> A slow site or confusing layout costs you jobs. We build fast, mobile-friendly websites optimized for the questions Jerome customers actually ask, then track what&rsquo;s working and fix what isn&rsquo;t. No guesswork, just data.</p>\n<p><strong>AI-driven visibility and review management.</strong> Voice search, ChatGPT, and Google&rsquo;s AI snapshots are reshaping how people find local businesses. We optimize your content so these tools surface your company when Jerome residents ask for recommendations, and we help you build the review profile that reinforces trust.</p>"
+  },
+  "ketchum": {
+    "location_type": "city",
+    "city_name": "Ketchum",
+    "county": "Blaine",
+    "population": "3500",
+    "region_name": "Magic Valley",
+    "region_slug": "magic-valley",
+    "region_anchor": "Twin Falls",
+    "what_we_do": "<p><strong>Local SEO and organic visibility</strong> matter when visitors search &ldquo;Ketchum restaurants,&rdquo; &ldquo;Sun Valley rentals,&rdquo; or &ldquo;Wood River Valley services.&rdquo; We build search presence that works in both peak season and shoulder months.</p>\n<p><strong>Paid search and social campaigns</strong> let lodging operators, outfitters, and retail businesses reach travelers planning trips or residents searching locally. We manage budgets that need to perform during compressed revenue windows.</p>\n<p><strong>Website and conversion work</strong> turns traffic into bookings. A rafting company, boutique hotel, or property manager needs forms that work on mobile and load fast at altitude connectivity speeds.</p>\n<p><strong>AI and directory visibility</strong> matters when voice search or map queries pull answers. We make sure your business shows up when someone asks for services near Ketchum or the Valley.</p>\n<p><strong>Social and content strategy</strong> keeps your brand visible between ski season and summer. We help businesses stay present when the market rhythm shifts from tourism peaks to local trade.</p>"
+  },
+  "kuna": {
+    "location_type": "city",
+    "city_name": "Kuna",
+    "county": "Ada",
+    "population": "31490",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p>We help Kuna&rsquo;s ag services, retail, home builders, and professional practices show up when people search. SEO work means your feed store, HVAC company, or veterinary clinic ranks when someone types your service plus Kuna or Meridian Road into Google.</p>\n<p>Paid search and social ads put you in front of buyers actively looking. A landscape contractor targeting new subdivisions can run Google Ads for hardscape installation. A local CPA can reach Kuna families on Facebook during tax season without wasting budget on Nampa or Eagle.</p>\n<p>We build fast, mobile-friendly websites and optimize existing ones for conversions. If your site loads slow or buries your phone number, you lose calls. We also manage AI visibility work so your business shows up accurately in ChatGPT, Perplexity, and voice search results.</p>\n<p>Social content, email follow-up, landing page testing. It all feeds the same goal: turn more of your traffic into phone calls, form fills, and walk-ins.</p>"
+  },
+  "lewiston": {
+    "location_type": "city",
+    "city_name": "Lewiston",
+    "county": "Nez Perce",
+    "population": "34000",
+    "region_name": "North Central Idaho",
+    "region_slug": "north-central-idaho",
+    "region_anchor": "Lewiston",
+    "what_we_do": "<p>SEO for Lewiston means understanding how people search for lumber suppliers, college town services, and outdoor recreation outfitters. We build search visibility that connects your business to the keywords your customers actually use, from &ldquo;Lewiston grain storage&rdquo; to &ldquo;Snake River boat repair.&rdquo; No invented rankings, just consistent technical work that earns traffic over time.</p>\n<p>Paid search and social campaigns work well here when you need to reach specific audiences quickly. A Lewis-Clark State College vendor might run targeted campaigns during enrollment periods. A timber equipment dealer might use Facebook to reach logging operations across the Clearwater Basin. We set up campaigns that match your revenue cycle, not some generic playbook.</p>\n<p>Local web design and conversion work matters in markets like Lewiston, where your website often closes the deal after someone finds you in search. We build sites that load fast, explain your services clearly, and make it easy for customers to contact you. If you&rsquo;re a grain co-op or an ag equipment dealer, your site should answer questions before the phone rings.</p>\n<p>AI visibility is newer but increasingly relevant. When someone asks ChatGPT or Perplexity for &ldquo;Lewiston accounting firm&rdquo; or &ldquo;Nez Perce County excavation contractor,&rdquo; we want your business surfacing in those results. It&rsquo;s an extension of the same search principles, just a different interface.</p>"
+  },
+  "magic-valley": {
+    "location_type": "region",
+    "city_name": "",
+    "county": "",
+    "population": "",
+    "region_name": "Magic Valley",
+    "region_slug": "",
+    "region_anchor": "Twin Falls",
+    "what_we_do": ""
+  },
+  "mccall": {
+    "location_type": "city",
+    "city_name": "McCall",
+    "county": "Valley",
+    "population": "3800",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p>We build SEO strategies for hospitality operators, gear shops, and real estate brokerages competing for search visibility during peak booking windows. A lakefront lodge or mountain bike outfitter can&rsquo;t afford to disappear when travelers search for McCall lodging or summer activities.</p>\n<p>Paid search and social campaigns help restaurants, vacation rentals, and guide services manage seasonality. We set up ad schedules that align with ski season, summer lake traffic, and shoulder periods when you&rsquo;re competing hardest for discretionary spend.</p>\n<p>Web design and conversion work matters when a visitor lands on your site after a long search session. We tighten booking flows, clarify service offerings, and make sure mobile users from Boise or out of state can convert without friction. A slow site or buried contact form costs you revenue in a compressed season.</p>\n<p>AI visibility is newer but relevant. Voice search queries like &ldquo;best breakfast in McCall&rdquo; or &ldquo;dog-friendly cabins near Payette Lake&rdquo; pull from structured data. We help local businesses show up in those results, not just traditional blue links.</p>"
+  },
+  "meridian": {
+    "location_type": "city",
+    "city_name": "Meridian",
+    "county": "Ada",
+    "population": "142830",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p><strong>Search visibility</strong> matters when your customers are comparing contractors, accountants, or med spas along Eagle Road. We build SEO strategies that position Meridian businesses ahead of regional competitors, focusing on the queries your actual customers type into Google.</p>\n<p><strong>Paid advertising</strong> works when it&rsquo;s accountable. We run Google Ads and Meta campaigns for Meridian service businesses, tracking cost per lead and return on spend, not vanity metrics. If the campaign doesn&rsquo;t generate revenue, we adjust or kill it.</p>\n<p><strong>Social and content</strong> give your business a voice beyond the transaction. We write posts, manage accounts, and produce content that reflects how Meridian business owners actually talk, not how agencies think they should sound.</p>\n<p><strong>Web design and conversion rate optimization</strong> turn traffic into customers. A site that loads fast, answers questions, and makes it easy to call or book matters more than awards. We build for Meridian&rsquo;s mobile-first audience and test what actually converts.</p>\n<p><strong>AI visibility and workflow automation</strong> keep you competitive as search habits shift. We optimize for AI overviews, voice queries, and local assistant results, plus automate repetitive tasks so you can focus on running your business, not your marketing stack.</p>"
+  },
+  "middleton": {
+    "location_type": "city",
+    "city_name": "Middleton",
+    "county": "Canyon",
+    "population": "10500",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p>We handle search visibility for Middleton service businesses competing in Canyon County and the wider Treasure Valley. That means ranking for the searches your customers actually run, whether they&rsquo;re looking for contractors, ag suppliers, health providers, or professional services.</p>\n<p>Paid search and social campaigns run through our Boise team, targeting Middleton ZIP codes, neighboring Caldwell and Nampa audiences, or wider Treasure Valley reach depending on your service area. We write ads, set geographic parameters, adjust bids, and report on cost per lead.</p>\n<p>Web builds and redesigns get handled in-house. We work with Middleton retail shops, home services companies, and professional practices that need fast-loading sites, clear calls to action, and mobile layouts that don&rsquo;t break. Design stays clean, navigation stays simple.</p>\n<p>AI visibility work includes optimizing for voice search, ChatGPT citations, and the next wave of answer engines. For businesses serving both Middleton locals and Treasure Valley traffic, this layer matters.</p>\n<p>Conversion rate optimization means we review your site, forms, and user flow to find where visitors drop off. Small fixes often double inquiry rates without spending more on ads.</p>"
+  },
+  "moscow": {
+    "location_type": "city",
+    "city_name": "Moscow",
+    "county": "Latah",
+    "population": "26000",
+    "region_name": "North Central Idaho",
+    "region_slug": "north-central-idaho",
+    "region_anchor": "Lewiston",
+    "what_we_do": "<p>SEO and local search matter when students search &ldquo;coffee near UI&rdquo; or regional clients look for accounting firms in Moscow. We build pages that rank for the terms people actually type, then structure your site so Google understands what you do and where you do it.</p>\n<p>Paid search and social ads let you reach parents during move-in week, target alumni networks, or promote seasonal retail to the university calendar. We write ad copy that converts, set geographic and demographic filters, and report what&rsquo;s working in plain language.</p>\n<p>Moscow&rsquo;s economy mixes university services, ag suppliers, retail, and hospitality. We handle web design that works on mobile, email campaigns timed to the academic calendar, and AI-driven tools that surface your business in voice search and chatbot results.</p>\n<p>Conversion rate work turns traffic into leads. If your site gets visitors but few inquiries, we audit forms, calls-to-action, page speed, and messaging so more of those visits turn into phone calls or booked appointments.</p>"
+  },
+  "mountain-home": {
+    "location_type": "city",
+    "city_name": "Mountain Home",
+    "county": "Elmore",
+    "population": "16500",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p>We handle search visibility for defense contractors, hospitality operators serving the base community, and retail businesses competing along Highway 30. SEO and local search matter here because most commercial discovery happens on Google before someone drives into town.</p>\n<p>Paid search and social campaigns work for Mountain Home retailers, restaurants, and service providers who need measurable customer acquisition. We build ads that convert browsers into walk-ins, not vanity metrics.</p>\n<p>For legacy businesses ready to modernize, we design websites that load fast on mobile, rank in search, and actually convert traffic. Clean navigation, clear calls to action, no bloat.</p>\n<p>AI-powered tools like ChatGPT and Perplexity are starting to influence how people find local services. We&rsquo;re configuring citation profiles and structured data so Mountain Home businesses show up when those tools recommend options.</p>\n<p>Conversion rate optimization matters when you&rsquo;re competing for a finite local market. We test checkout flows, form fields, and landing page layouts to turn more visitors into customers without increasing ad spend.</p>"
+  },
+  "nampa": {
+    "location_type": "city",
+    "city_name": "Nampa",
+    "county": "Canyon",
+    "population": "117350",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p>We help Nampa businesses show up where customers are actually looking. That means technical SEO for manufacturers competing nationally, local search for medical practices and service providers targeting Canyon County, and paid search campaigns for retailers and B2B companies operating in one of Idaho&rsquo;s fastest-growing metros.</p>\n<p>Nampa&rsquo;s economy mixes legacy industries with modern growth sectors. Agricultural suppliers, logistics companies, and healthcare providers need different digital strategies than tech startups or professional services firms. We tailor search visibility, conversion optimization, and paid media to how your market actually buys.</p>\n<p>Social media and content work when they serve a search-first strategy. We build campaigns that reinforce brand presence for Nampa businesses without chasing vanity metrics. Web design and development projects focus on speed, mobile performance, and conversion paths that make sense for how Treasure Valley customers research and decide.</p>\n<p>AI-powered search tools like ChatGPT and Perplexity are changing how prospects discover local businesses. We optimize for these platforms alongside traditional Google visibility, ensuring Nampa companies stay findable as search behavior evolves.</p>"
+  },
+  "north-central-idaho": {
+    "location_type": "region",
+    "city_name": "",
+    "county": "",
+    "population": "",
+    "region_name": "North Central Idaho",
+    "region_slug": "",
+    "region_anchor": "Lewiston",
+    "what_we_do": ""
+  },
+  "panhandle": {
+    "location_type": "region",
+    "city_name": "",
+    "county": "",
+    "population": "",
+    "region_name": "North Idaho (Panhandle)",
+    "region_slug": "",
+    "region_anchor": "Coeur d'Alene",
+    "what_we_do": ""
+  },
+  "payette": {
+    "location_type": "city",
+    "city_name": "Payette",
+    "county": "Payette",
+    "population": "7800",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p><strong>Search visibility</strong> matters when your potential customers are in Ontario, Fruitland, or across the state line. We handle local SEO, Google Business Profile optimization, and organic content that puts Payette service providers, ag suppliers, and retail shops in front of buyers actively searching.</p>\n<p><strong>Paid advertising</strong> on Google and Meta lets you target by ZIP, industry, or behavior. Ag equipment dealers, HVAC contractors, and professional services in Payette use search and display ads to capture demand without wasting budget on unqualified clicks.</p>\n<p><strong>Social media and content marketing</strong> build trust in a tight-knit community. We help Payette businesses publish consistently, engage locally, and turn followers into repeat customers without relying on boosted posts or vanity metrics.</p>\n<p><strong>Web design and conversion rate optimization</strong> turn traffic into leads. Whether you&rsquo;re a Main Street retailer or a regional distributor, we build fast, mobile-friendly sites that make it easy for visitors to call, book, or buy.</p>\n<p><strong>AI-driven visibility</strong> ensures your business shows up in ChatGPT, Perplexity, and voice search results. As generative engines reshape how people find services, we make sure Payette businesses aren&rsquo;t left out of the answers.</p>"
+  },
+  "pocatello": {
+    "location_type": "city",
+    "city_name": "Pocatello",
+    "county": "Bannock",
+    "population": "57000",
+    "region_name": "Southeast Idaho",
+    "region_slug": "southeast-idaho",
+    "region_anchor": "Pocatello",
+    "what_we_do": "<p><strong>Search visibility</strong> matters when your customers are ISU faculty looking for professional services, regional patients searching for specialists, or mining operations sourcing equipment. We build SEO around the queries Pocatello buyers actually use, not generic templates.</p>\n<p><strong>Paid search and social</strong> work when you need to reach beyond the university bubble. Healthcare practices competing for Bannock County referrals, retail serving the LDS family market, or regional suppliers targeting Eastern Idaho all benefit from tight geographic targeting and budget discipline.</p>\n<p><strong>Web design and conversion work</strong> gets results when your site needs to serve both campus-adjacent professionals and rural regional buyers. We design for fast load times, mobile-first browsing, and clear paths to contact or purchase.</p>\n<p><strong>AI visibility</strong> is emerging as voice search and LLM platforms start surfacing local businesses. We structure your content so Google&rsquo;s AI snapshots, ChatGPT, and other tools cite your firm when Southeast Idaho buyers ask questions.</p>\n<p><strong>Social and reputation management</strong> help maintain trust in tight-knit markets where word travels fast through church communities, ISU networks, and regional industry circles.</p>"
+  },
+  "post-falls": {
+    "location_type": "city",
+    "city_name": "Post Falls",
+    "county": "Kootenai",
+    "population": "46000",
+    "region_name": "North Idaho (Panhandle)",
+    "region_slug": "panhandle",
+    "region_anchor": "Coeur d'Alene",
+    "what_we_do": "<p><strong>Search visibility</strong> matters when you&rsquo;re competing with Coeur d&rsquo;Alene and Spokane for the same customer searches. We optimize for the long-tail queries your buyers actually use, whether that&rsquo;s waterfront property management, cabinet manufacturing, or family dental care. Local pack rankings and organic authority keep you visible when someone types your category plus Post Falls.</p>\n<p><strong>Paid search and social ads</strong> let you control the narrative when organic takes time. We run Google Ads and Meta campaigns that target in-migrants researching services before they move, or resort visitors planning their next trip. Budget goes to the keywords and audiences that convert, not impressionistic brand spend.</p>\n<p><strong>Web design and conversion rate optimization</strong> turn traffic into leads. A contractor site that loads fast, shows before-and-after galleries, and has a mobile-friendly contact form will outperform a slow, cluttered competitor every time. We build for conversion, not awards.</p>\n<p><strong>Social media and content</strong> work when they reflect real project work or customer questions. A Post Falls HVAC company posting about wood-stove-to-heat-pump conversions will get more traction than stock lifestyle imagery. We help you document what you actually do, in a way that builds trust with local buyers.</p>\n<p><strong>AI visibility and schema markup</strong> ensure your business shows up in ChatGPT, Perplexity, and voice search results. As zero-click searches grow, structured data and citation consistency become the difference between being recommended and being invisible.</p>"
+  },
+  "preston": {
+    "location_type": "city",
+    "city_name": "Preston",
+    "county": "Franklin",
+    "population": "6000",
+    "region_name": "Southeast Idaho",
+    "region_slug": "southeast-idaho",
+    "region_anchor": "Pocatello",
+    "what_we_do": "<p>We handle search marketing for farm equipment dealers, veterinary clinics, rural insurance agencies, and feed suppliers competing for Franklin County customers. Local SEO puts your business in front of ranchers and homeowners searching for ag services, livestock care, and equipment repair.</p>\n<p>Paid search and social ads work for seasonal businesses like seed retailers and implement dealers who need visibility during narrow buying windows. We write ads that convert rural searchers into phone calls and quote requests.</p>\n<p>For family-owned hardware stores, accounting practices, and real estate brokers, we build simple websites that load fast on rural broadband and explain services clearly. Clean layouts, local photography, mobile-friendly navigation.</p>\n<p>AI-powered search engines now surface businesses based on structured data and review signals. We keep your listings consistent across Google, Bing, and LLM tools so Preston customers find accurate information no matter how they search.</p>"
+  },
+  "rathdrum": {
+    "location_type": "city",
+    "city_name": "Rathdrum",
+    "county": "Kootenai",
+    "population": "10000",
+    "region_name": "North Idaho (Panhandle)",
+    "region_slug": "panhandle",
+    "region_anchor": "Coeur d'Alene",
+    "what_we_do": "<p>We handle search visibility for contractors, home services, and retail businesses navigating Rathdrum&rsquo;s fast-growth residential market. Local search and Google Business Profile optimization help new arrivals find you when they need HVAC, roofing, landscaping, or equipment rental.</p>\n<p>Paid search and social campaigns work for lake-adjacent hospitality, outdoor recreation retailers, and property management firms serving the second-home and vacation rental market. We build ads that reach both local residents and seasonal visitors planning trips around Lake Coeur d&rsquo;Alene.</p>\n<p>Web design and conversion rate optimization matter when your site is the first impression for transplants comparing service providers. We design fast, mobile-friendly sites that turn searches into calls. Social content and email campaigns keep you visible in a community where word-of-mouth still drives referrals, but online presence closes the deal.</p>\n<p>AI-driven search visibility is starting to reshape how people find timber suppliers, builders, and specialty trades in North Idaho. We make sure your business shows up in conversational search results, not just your competitors.</p>"
+  },
+  "rexburg": {
+    "location_type": "city",
+    "city_name": "Rexburg",
+    "county": "Madison",
+    "population": "38000",
+    "region_name": "Eastern Idaho",
+    "region_slug": "eastern-idaho",
+    "region_anchor": "Idaho Falls",
+    "what_we_do": "<p><strong>SEO for student-driven search cycles.</strong> Rexburg&rsquo;s market swells and contracts with the academic calendar. We help housing providers, restaurants, retail, and professional services stay visible during enrollment surges and maintain presence when campus empties. Local pack rankings and map visibility matter when thousands of new residents search for services every fall.</p>\n<p><strong>Paid ads calibrated to LDS culture and family spending.</strong> BYU-Idaho&rsquo;s influence shapes the market. We build campaigns that respect community values, emphasize family-friendly messaging, and reach both student households and long-term residents. Google Ads, Meta, and localized targeting help service providers connect with the right audience at the right time.</p>\n<p><strong>Web design for seasonal conversion.</strong> A site that works for a student apartment complex needs different architecture than one serving agricultural suppliers or professional services tied to INL contractors. We build mobile-first, fast-loading pages that convert Rexburg&rsquo;s unique mix of short-term and long-term customers.</p>\n<p><strong>AI visibility and review management.</strong> Voice search and AI overviews are how students and young families find everything from dentists to oil changes. We optimize for conversational queries, manage Google Business Profiles, and help Rexburg businesses show up when someone asks their phone where to go.</p>"
+  },
+  "rigby": {
+    "location_type": "city",
+    "city_name": "Rigby",
+    "county": "Jefferson",
+    "population": "5000",
+    "region_name": "Eastern Idaho",
+    "region_slug": "eastern-idaho",
+    "region_anchor": "Idaho Falls",
+    "what_we_do": "<p>We help Rigby&rsquo;s ag service providers, Main Street retail, and professional service firms get found when locals and regional customers search. SEO work for us means making sure your business shows up when someone in Jefferson County or the Idaho Falls metro searches for what you offer.</p>\n<p>Paid search and social campaigns let you reach beyond Rigby&rsquo;s city limits, tapping into the INL commuter base, the BYU-Idaho student economy in Rexburg, and the surrounding farming communities. We build campaigns that respect small-town budgets and deliver measurable leads, not vanity metrics.</p>\n<p>Your website should load fast, work on a phone in a tractor cab or a lab office, and clearly explain what you do. We design sites that fit how Eastern Idaho businesses actually operate. If you&rsquo;re serving LDS families, INL engineers, or regional ag operators, your messaging and user experience need to reflect that reality.</p>\n<p>AI tools and voice search are changing how people find local businesses. We make sure your Google Business Profile, citations, and structured data are set up so you show up in Maps, voice results, and AI-generated answers. Conversion optimization means testing your forms, calls-to-action, and landing pages so more visitors turn into actual customers.</p>"
+  },
+  "rupert": {
+    "location_type": "city",
+    "city_name": "Rupert",
+    "county": "Minidoka",
+    "population": "6000",
+    "region_name": "Magic Valley",
+    "region_slug": "magic-valley",
+    "region_anchor": "Twin Falls",
+    "what_we_do": "<p>SEO for Rupert means showing up when regional buyers search for ag inputs, processing capacity, or logistics partners. We build search visibility that aligns with how Magic Valley buyers actually find suppliers, not guesswork.</p>\n<p>Paid search and social campaigns work when they&rsquo;re tuned to rural buying cycles. A feed supplier or equipment dealer doesn&rsquo;t convert on the same calendar as a software company. We structure campaigns around harvest timing, seasonal cash flow, and regional trade patterns.</p>\n<p>Web design for ag and food processing clients has to load fast on rural broadband, work on mobile in the field, and make contact paths obvious. We build sites that function as working tools, not brochures. For dairy operations, processors, and logistics companies serving the Snake River Plain, that means clear service menus, direct contact routes, and load times that don&rsquo;t punish slower connections.</p>\n<p>AI visibility and CRO matter when buyers are comparing suppliers across the Magic Valley. We make sure your business shows up in AI-generated answers and that your site converts once they land. Small improvements in conversion rate compound quickly when margins are tight and competition is regional.</p>"
+  },
+  "salmon": {
+    "location_type": "city",
+    "city_name": "Salmon",
+    "county": "Lemhi",
+    "population": "3100",
+    "region_name": "Central Idaho",
+    "region_slug": "central-idaho",
+    "region_anchor": "Salmon",
+    "what_we_do": "<p>We handle search marketing for outfitters, river guide companies, motels, and ranch operations that need visibility when visitors plan trips months in advance. Paid search and Maps optimization matter when someone searches &ldquo;Salmon River rafting&rdquo; or &ldquo;Lemhi County lodging&rdquo; from out of state.</p>\n<p>For year-round businesses, ranching suppliers, equipment dealers, and local service providers, we build SEO footprints that work in low-density markets where a few ranking positions shift the entire competitive landscape.</p>\n<p>Social strategy here centers on seasonal messaging. Spring runoff, summer float trips, fall hunting, winter snowmobile access. We time campaigns to match the rhythm of the tourism calendar and help local businesses stay visible when demand peaks.</p>\n<p>Website and design work emphasizes mobile-first builds and fast load times. Visitors often browse on poor cell coverage driving through the mountains. A slow site loses the booking.</p>\n<p>We apply AI visibility tactics to get businesses into LLM-generated travel itineraries and voice search results. When a family asks their phone for &ldquo;things to do near Salmon Idaho,&rdquo; we want our clients in that answer.</p>"
+  },
+  "sandpoint": {
+    "location_type": "city",
+    "city_name": "Sandpoint",
+    "county": "Bonner",
+    "population": "10000",
+    "region_name": "North Idaho (Panhandle)",
+    "region_slug": "panhandle",
+    "region_anchor": "Coeur d'Alene",
+    "what_we_do": "<p>We handle search visibility for Sandpoint retailers, outdoor gear shops, vacation rental managers, and professional services competing in a tourist-fed, seasonal market. Local SEO and Google Business Profile work matter here because visitors and new residents both search &ldquo;Sandpoint&rdquo; plus what they need, and showing up first wins the transaction.</p>\n<p>Paid search and social campaigns let resorts, property managers, and hospitality operators fill shoulder seasons and reach West Coast transplants before they arrive. We build lead-gen funnels that don&rsquo;t waste budget on browsers, just qualified intent.</p>\n<p>Website and brand design for Sandpoint businesses needs to load fast on mountain internet, work on mobile, and convert lookers into bookers. We build conversion-focused sites that don&rsquo;t look like WordPress templates from 2015.</p>\n<p>AI-powered voice and answer-engine visibility is new table stakes. When someone asks their phone where to rent a paddleboard or find a property manager in Sandpoint, we make sure our clients show up in those results, not just traditional blue links.</p>\n<p>Conversion rate optimization and landing page testing turn traffic into revenue. A lot of Sandpoint businesses get seasonal spikes, then wonder why the phone didn&rsquo;t ring. We tighten the funnel so clicks turn into calls and bookings.</p>"
+  },
+  "shelley": {
+    "location_type": "city",
+    "city_name": "Shelley",
+    "county": "Bingham",
+    "population": "5000",
+    "region_name": "Eastern Idaho",
+    "region_slug": "eastern-idaho",
+    "region_anchor": "Idaho Falls",
+    "what_we_do": "<p>Most Shelley businesses compete in two directions: locally for foot traffic and regional service area work, and digitally for customers who search from Idaho Falls, Blackfoot, and beyond. We build SEO strategies that capture both, mapping your Google Business Profile to Main Street while targeting search terms that pull from the wider Bingham County market.</p>\n<p>Paid search and social campaigns let ag suppliers, Main Street retail, and service providers reach INL commuters, BYU-Idaho families, and regional customers without guessing. We write ads that speak to the buying habits of eastern Idaho, set geographic and demographic targeting that reflects real drive times, and track what converts.</p>\n<p>Your website is the storefront most people see first. We design fast-loading, mobile-responsive sites that work as well on a phone in a field as they do on a desktop in an office. Clear calls to action, local trust signals, and layouts built for the way rural and small-town customers actually browse.</p>\n<p>Social content and email let you stay visible between purchase cycles. For businesses serving farmers, families, and INL professionals, that means seasonal messaging, community engagement, and the kind of familiarity that keeps you top of mind when need arises.</p>\n<p>AI-powered search and voice queries are changing how people find local providers. We optimize for the questions customers ask Google, Siri, and Alexa, so your business shows up when someone searches for what you do near Shelley, Firth, or Basalt.</p>"
+  },
+  "southeast-idaho": {
+    "location_type": "region",
+    "city_name": "",
+    "county": "",
+    "population": "",
+    "region_name": "Southeast Idaho",
+    "region_slug": "",
+    "region_anchor": "Pocatello",
+    "what_we_do": ""
+  },
+  "st-anthony": {
+    "location_type": "city",
+    "city_name": "St. Anthony",
+    "county": "Fremont",
+    "population": "3500",
+    "region_name": "Eastern Idaho",
+    "region_slug": "eastern-idaho",
+    "region_anchor": "Idaho Falls",
+    "what_we_do": "<p>We handle search visibility for ag suppliers, equipment dealers, hospitality operators, and service businesses serving Fremont County. Local SEO work puts you in front of farmers searching for parts during planting and harvest windows, tourists planning Island Park trips who need lodging or services in St. Anthony, and Rexburg-area families looking for weekend dining or shopping outside the BYU-Idaho corridor.</p>\n<p>Paid search and social campaigns adjust for the rhythms that define Eastern Idaho commerce. Spring machinery searches spike hard, summer recreation queries climb as Yellowstone traffic flows through, and shoulder seasons demand different messaging. We set bid strategies and creative that respect those patterns instead of running flat national templates.</p>\n<p>Web and conversion work for St. Anthony clients means mobile-first builds that load fast on rural broadband, clear service descriptions for audiences who prefer straightforward communication, and contact forms that don&rsquo;t ask for information locals won&rsquo;t give. We&rsquo;ve learned that Eastern Idaho users scroll less and decide faster than urban markets.</p>\n<p>AI visibility matters when voice searches ask &ldquo;seed dealer near me&rdquo; or &ldquo;where to eat between Rexburg and Island Park.&rdquo; We structure your schema and citations so Google&rsquo;s AI snapshots surface your business for the transactional queries that drive actual revenue in small-market Idaho.</p>"
+  },
+  "star": {
+    "location_type": "city",
+    "city_name": "Star",
+    "county": "Ada",
+    "population": "19920",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p>We handle search visibility for Star&rsquo;s service businesses, contractors, and retail operators who need to show up when neighbors search locally. SEO work here means dialing in for &ldquo;Star plumber&rdquo; or &ldquo;landscaping near Eagle Road,&rdquo; not just broad Treasure Valley terms.</p>\n<p>Paid search and social campaigns tie to Star&rsquo;s growth patterns. New subdivisions mean new homeowners looking for HVAC, fencing, window cleaning. We build ad campaigns that match those intent signals without burning budget on irrelevant traffic.</p>\n<p>Web design and conversion optimization matter when your competition includes every Meridian and Eagle provider within a ten-minute drive. A fast site that answers the question and makes contact easy wins the call. We build for that outcome.</p>\n<p>AI visibility is newer but increasingly relevant. Voice search, AI overviews, and local business summaries pull from structured data. We make sure Star businesses show up in those results, not just traditional blue links.</p>"
+  },
+  "treasure-valley": {
+    "location_type": "region",
+    "city_name": "",
+    "county": "",
+    "population": "",
+    "region_name": "Treasure Valley",
+    "region_slug": "",
+    "region_anchor": "Boise",
+    "what_we_do": ""
+  },
+  "twin-falls": {
+    "location_type": "city",
+    "city_name": "Twin Falls",
+    "county": "Twin Falls",
+    "population": "55000",
+    "region_name": "Magic Valley",
+    "region_slug": "magic-valley",
+    "region_anchor": "Twin Falls",
+    "what_we_do": "<p><strong>Search visibility</strong> matters when buyers search &ldquo;dairy equipment Twin Falls&rdquo; or &ldquo;Magic Valley CPA&rdquo; and your competitor ranks first. We optimize for the local-plus-regional intent that drives calls from Jerome, Burley, and Rupert.</p>\n<p><strong>Paid campaigns</strong> work when a Gooding dairy looks for feed suppliers or a Hagerman logistics firm needs accounting support. We run Google Ads and Meta campaigns that reach decision-makers in Twin Falls and the surrounding ag economy without burning budget on Boise traffic you don&rsquo;t need.</p>\n<p><strong>Social and content</strong> connect when a local real estate group shares market updates or a food processor highlights USDA certifications. We build posting rhythms and email sequences that keep Twin Falls businesses visible to regional partners and end customers.</p>\n<p><strong>Web and design</strong> projects include sites for ag service providers, retail, and professional services. Fast-loading, mobile-ready pages with clear calls to action. We&rsquo;ve worked in Idaho long enough to know that a contractor in Twin Falls serves customers from Kimberly to Shoshone, and the site needs to reflect that reach.</p>\n<p><strong>AI visibility</strong> (ChatGPT, Perplexity) and <strong>conversion rate optimization</strong> close the gap between traffic and revenue. We tune checkout flows for regional e-commerce and improve lead forms so you capture more inquiries from the Magic Valley market.</p>"
+  },
+  "weiser": {
+    "location_type": "city",
+    "city_name": "Weiser",
+    "county": "Washington",
+    "population": "5500",
+    "region_name": "Treasure Valley",
+    "region_slug": "treasure-valley",
+    "region_anchor": "Boise",
+    "what_we_do": "<p>Most Weiser businesses rely on local traffic and word-of-mouth, but search intent matters even in smaller markets. When someone in Payette or New Plymouth searches for farm equipment repair, event services, or legal help, your Google Business Profile and local SEO signals decide whether you show up. We optimize for those exact moments.</p>\n<p>Paid search works differently at small-town scale. We don&rsquo;t blow budgets on broad campaigns. Instead, we target high-intent keywords within a manageable radius, often focusing on mobile users passing through or residents searching for immediate services. A tightly managed Google Ads campaign can own a category in Washington County without wasting spend.</p>\n<p>Social media serves a different role here. Facebook still drives real community engagement and event awareness. We help Main Street retailers, service providers, and seasonal businesses stay visible year-round, not just during Fiddler&rsquo;s Week. Posts, local targeting, and modest ad spend keep you in front of the right people.</p>\n<p>Web design for Weiser clients prioritizes mobile performance and fast load times. Visitors expect clear service descriptions, contact forms that work, and Google Maps integration. We build straightforward sites that convert local traffic without unnecessary complexity. Your website should answer questions and make it easy to call or visit.</p>\n<p>CRO matters even at modest traffic volumes. If you&rsquo;re getting 200 site visits a month, converting 5% instead of 2% means real revenue difference. We test calls-to-action, simplify contact flows, and track what actually drives phone calls and form submissions.</p>"
+  }
+}
