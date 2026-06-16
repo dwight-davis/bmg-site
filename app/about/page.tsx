@@ -8,6 +8,7 @@ import { Plan } from "@/components/Plan";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 import { CalendlyButton } from "@/components/CalendlyButton";
+import { LogoWall } from "@/components/LogoWall";
 import { JsonLd } from "@/components/schema/JsonLd";
 import { personSchema, breadcrumbSchema } from "@/lib/seo";
 
@@ -118,6 +119,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <LogoWall />
       <Plan />
       <CTA />
       <Footer />

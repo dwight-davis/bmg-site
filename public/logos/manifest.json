@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "ibm",
+    "label": "IBM",
+    "src": "/logos/ibm.png"
+  },
+  {
+    "slug": "intuit",
+    "label": "Intuit",
+    "src": "/logos/intuit.png"
+  },
+  {
+    "slug": "quickbooks",
+    "label": "QuickBooks",
+    "src": "/logos/quickbooks.png"
+  },
+  {
+    "slug": "tiffany",
+    "label": "Tiffany & Co.",
+    "src": "/logos/tiffany.png"
+  },
+  {
+    "slug": "academy",
+    "label": "Academy Sports",
+    "src": "/logos/academy.png"
+  },
+  {
+    "slug": "houston-chronicle",
+    "label": "Houston Chronicle",
+    "src": "/logos/houston-chronicle.png"
+  },
+  {
+    "slug": "ypcom",
+    "label": "YP.com",
+    "src": "/logos/ypcom.png"
+  },
+  {
+    "slug": "container-packaging",
+    "label": "Container and Packaging",
+    "src": "/logos/container-packaging.png"
+  },
+  {
+    "slug": "idaho-roasting",
+    "label": "Idaho Roasting",
+    "src": "/logos/idaho-roasting.png"
+  },
+  {
+    "slug": "houston-ssda",
+    "label": "Houston SSD Attorney",
+    "src": "/logos/houston-ssda.png"
+  },
+  {
+    "slug": "fastfixtn",
+    "label": "Fast Fix TN",
+    "src": "/logos/fastfixtn.png"
+  },
+  {
+    "slug": "txheatandair",
+    "label": "TX Heat & Air",
+    "src": "/logos/txheatandair.png"
+  }
+]
