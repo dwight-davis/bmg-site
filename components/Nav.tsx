@@ -17,10 +17,10 @@ export function Nav() {
         </Link>
 
         <div className="hidden lg:flex items-center gap-7 font-body text-sm font-medium text-white/90">
-          <Link href="#solution" className="hover:text-white">What we do</Link>
-          <Link href="#guide" className="hover:text-white">About Dwight</Link>
-          <Link href="#plan" className="hover:text-white">The plan</Link>
-          <Link href="#stakes" className="hover:text-white">Results</Link>
+          <Link href="/services/" className="hover:text-white">Services</Link>
+          <Link href="/about/" className="hover:text-white">About Dwight</Link>
+          <Link href="/industries/" className="hover:text-white">Industries</Link>
+          <Link href="/blog/" className="hover:text-white">Field notes</Link>
         </div>
 
         <CalendlyButton className="btn-pill bg-red text-white shadow-crisp-sm text-xs px-5 py-3">
