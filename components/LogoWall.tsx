@@ -8,7 +8,6 @@ import Image from "next/image";
 const LOGOS = [
   // Past / large work (named first because recognition does the work)
   { slug: "ibm",                 label: "IBM" },
-  { slug: "intuit",              label: "Intuit" },
   { slug: "quickbooks",          label: "QuickBooks" },
   { slug: "tiffany",             label: "Tiffany & Co." },
   { slug: "academy",             label: "Academy Sports" },
@@ -37,19 +36,19 @@ export function LogoWall() {
             calling me up this month. Same job: get the phone to ring.
           </p>
         </div>
-        <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-x-6 gap-y-10 items-center max-w-5xl mx-auto">
+        <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-x-8 gap-y-12 items-center max-w-5xl mx-auto">
           {LOGOS.map((l) => (
             <li
               key={l.slug}
-              className="flex items-center justify-center h-16"
+              className="flex items-center justify-center h-20"
               title={l.label}
             >
               <Image
                 src={`/logos/${l.slug}.png`}
                 alt={l.label}
-                width={140}
-                height={64}
-                className="max-h-12 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+                width={240}
+                height={120}
+                className="max-h-16 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity"
               />
             </li>
           ))}
