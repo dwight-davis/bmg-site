@@ -1,8 +1,990 @@
 {
-  "_note": "Per-tier pricing keyed by service_tier slug. Schema per entry:\n  amount: number (USD whole dollars)\n  interval: 'one-time' | 'monthly' | 'quarterly' | 'yearly' | 'project'\n  starting_at: boolean (true => prefix with 'Starting at'; false => exact)\n  setup_fee: number | null (one-time fee in addition to recurring)\n  note: string | null (one-line clarification shown under the price)\nTiers without an entry render a 'Schedule a call to scope pricing' CTA instead of a price card. Add entries here as we recover them from the WP DB.",
-
-  "_examples": {
-    "seo__local-gold": { "amount": 1500, "interval": "monthly", "starting_at": false, "setup_fee": null, "note": null },
-    "seo__gmb":        { "amount": 750,  "interval": "one-time", "starting_at": false, "setup_fee": null, "note": null }
+  "_note": "Per-tier pricing keyed by service_tier slug. Schema:\n  amount: number (USD whole dollars)\n  interval: 'one-time' | 'monthly' | 'quarterly' | 'yearly' | 'project'\n  starting_at: boolean\n  setup_fee: number | null\n  note: string | null\nGenerated from the WP MySQL dump (dbzp4geumuh4la) on 2026-06-15. Source meta keys: _bmg_customer_price + _bmg_billing_cycle on the service_tier post type.",
+  "a-la-carte__10-business-posts": {
+    "amount": 218,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__5-business-posts": {
+    "amount": 110,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__additional-gravity-forms": {
+    "amount": 50,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__additional-pages": {
+    "amount": 40,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__blog": {
+    "amount": 198,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__call-tracking-local-number": {
+    "amount": 42,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__call-tracking-toll-free-number": {
+    "amount": 56,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__directory-submission": {
+    "amount": 250,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__divi-builder": {
+    "amount": 100,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__guest-blog-post-writing-and-pos": {
+    "amount": 74,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__infographic-creation-and-distribution": {
+    "amount": 372,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__keyword-research": {
+    "amount": 50,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__logo-designing": {
+    "amount": 180,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__on-page-optimization": {
+    "amount": 62,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__photo-gallery": {
+    "amount": 40,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__press-release-creation-and-distribution": {
+    "amount": 200,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__qa-writing-and-posting": {
+    "amount": 62,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__social-bookmarking": {
+    "amount": 188,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__social-profiles-creation": {
+    "amount": 40,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__video-ppt-creation-and-distribution": {
+    "amount": 248,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__visual-composer": {
+    "amount": 100,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__voiceover-video-creation-and-distribution": {
+    "amount": 498,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "a-la-carte__website-content": {
+    "amount": 62,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "affiliate__basic-plan": {
+    "amount": 612,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "affiliate__dynamic-plan": {
+    "amount": 2544,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "affiliate__initial-plan": {
+    "amount": 298,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "affiliate__one-time-setup": {
+    "amount": 220,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "affiliate__power-plan": {
+    "amount": 948,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "affiliate__premium-plan": {
+    "amount": 2092,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "affiliate__professional-plan": {
+    "amount": 1704,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ai-visibility__ai-brand-visibility-dashboard": {
+    "amount": 30,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ai-visibility__ai-foundation": {
+    "amount": 198,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ai-visibility__enterprise-ai-dominance": {
+    "amount": 598,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ai-visibility__generative-growth": {
+    "amount": 398,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "cro__heatmap-subscription": {
+    "amount": 12,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "cro__user-testing-video": {
+    "amount": 124,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__12-fold": {
+    "amount": 872,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__affiliate-banners": {
+    "amount": 26,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__custom-banner": {
+    "amount": 62,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__custom-character-animation-video-creation": {
+    "amount": 1248,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__custom-templates": {
+    "amount": 372,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__facebook-cover-and-profile-photo-design": {
+    "amount": 62,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__facebook-post-images": {
+    "amount": 12,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__flyer-design": {
+    "amount": 122,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__google-ads": {
+    "amount": 26,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__infographic-creation": {
+    "amount": 248,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__instagram-cover-and-profile-photo-design": {
+    "amount": 62,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__logo-design": {
+    "amount": 226,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__magento-ecommerce": {
+    "amount": 2748,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__music-video-creation": {
+    "amount": 198,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__pinterest-cover-and-profile-photo-design": {
+    "amount": 62,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__ready-character-animation-video-creation": {
+    "amount": 622,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__ready-templates": {
+    "amount": 122,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__shopify": {
+    "amount": 2498,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__shopify-basic": {
+    "amount": 1198,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__six-fold": {
+    "amount": 622,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__square-space": {
+    "amount": 698,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__tri-fold": {
+    "amount": 372,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__twitter-header-and-profile-photo-design": {
+    "amount": 62,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__two-fold": {
+    "amount": 248,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__voiceover-video-creation": {
+    "amount": 498,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__wix-website": {
+    "amount": 698,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__woocommerce": {
+    "amount": 1688,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__wordpress": {
+    "amount": 748,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__wordpress-advance": {
+    "amount": 1362,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__wordpress-value": {
+    "amount": 938,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "design__youtube-cover-and-profile-photo-design": {
+    "amount": 62,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__advertising-1-plan": {
+    "amount": 122,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__advertising-2-plan": {
+    "amount": 248,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__advertising-3-plan": {
+    "amount": 622,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__amazon-ads-custom-plan": {
+    "amount": 218,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__dynamic-plan": {
+    "amount": 1430,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__ecommerce-1-plan": {
+    "amount": 198,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__ecommerce-2-plan": {
+    "amount": 272,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__ecommerce-3-plan": {
+    "amount": 372,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__local-search-ads": {
+    "amount": 122,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__power-plan": {
+    "amount": 904,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__retargeting-1-add-on": {
+    "amount": 122,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__retargeting-2-add-on": {
+    "amount": 248,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__retargeting-3-add-on": {
+    "amount": 622,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__standard-plan": {
+    "amount": 480,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__traffic-plan": {
+    "amount": 316,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__ultimate-plan": {
+    "amount": 2530,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__youtube-plan-1": {
+    "amount": 158,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__youtube-plan-2": {
+    "amount": 298,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "ppc__youtube-plan-3": {
+    "amount": 334,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "saas__saas-project": {
+    "amount": 84,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__gmb": {
+    "amount": 100,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__link-building-package-1": {
+    "amount": 250,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__link-building-package-2": {
+    "amount": 500,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__link-building-package-3": {
+    "amount": 1000,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__link-building-package-4": {
+    "amount": 1874,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__link-building-package-5": {
+    "amount": 2500,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__local-gold": {
+    "amount": 1148,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__local-platinum": {
+    "amount": 1372,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__local-silver": {
+    "amount": 872,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__local-starter": {
+    "amount": 374,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__local-value": {
+    "amount": 624,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__national-gold": {
+    "amount": 3172,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__national-platinum": {
+    "amount": 4672,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__national-silver": {
+    "amount": 2098,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__national-starter": {
+    "amount": 748,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__national-value": {
+    "amount": 1248,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__on-page-optimization-silver": {
+    "amount": 188,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__on-page-optimization-starter": {
+    "amount": 76,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__on-page-optimization-value": {
+    "amount": 112,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__presence-advanced": {
+    "amount": 450,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__presence-basic": {
+    "amount": 300,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__presence-standard": {
+    "amount": 376,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__spanish-gold": {
+    "amount": 1622,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__spanish-platinum": {
+    "amount": 1948,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__spanish-silver": {
+    "amount": 1122,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__spanish-starter": {
+    "amount": 548,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "seo__spanish-value": {
+    "amount": 872,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__best-deal-plan-20": {
+    "amount": 328,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__exclusive-business-posts-premium-plan": {
+    "amount": 218,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__exclusive-business-posts-standard-plan": {
+    "amount": 110,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__facebook-ads-basic-new": {
+    "amount": 372,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__facebook-ads-premium-new": {
+    "amount": 1372,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__facebook-ads-standard-new": {
+    "amount": 672,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__facebook-ads-starter-plan-new": {
+    "amount": 222,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__instagram-ads-basic-new": {
+    "amount": 222,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__instagram-ads-standard-new": {
+    "amount": 280,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__linkedin-ads-basic-new": {
+    "amount": 372,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__linkedin-ads-premium-new": {
+    "amount": 1372,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__linkedin-ads-standard-new": {
+    "amount": 672,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__linkedin-ads-starter-new": {
+    "amount": 222,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__ninja-plan-new": {
+    "amount": 4398,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__premium-plan-48": {
+    "amount": 812,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__smo-guaranteed-plan": {
+    "amount": 398,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__social-media-profile-creation-with-bio": {
+    "amount": 60,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__social-media-profile-creation-with-bio-and-the-artwork": {
+    "amount": 80,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__social-profile-creation": {
+    "amount": 40,
+    "interval": "one-time",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__solo-plan-12": {
+    "amount": 218,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__standard-plan-36": {
+    "amount": 592,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__tiktok-ads-basic": {
+    "amount": 372,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__tiktok-ads-premium": {
+    "amount": 1370,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__tiktok-ads-standard": {
+    "amount": 672,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__tiktok-ads-starter": {
+    "amount": 220,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "smo__twitter-ads-basic": {
+    "amount": 670,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
+  },
+  "special-offers__smo-guaranteed-plan": {
+    "amount": 398,
+    "interval": "monthly",
+    "starting_at": false,
+    "setup_fee": null,
+    "note": null
   }
 }
