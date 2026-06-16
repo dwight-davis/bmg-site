@@ -35,7 +35,7 @@ export function Trust() {
       <div className="container-content py-20">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="font-body text-xs font-bold uppercase tracking-eyebrow text-paper mb-4">
-            Empathy & competency
+            Why work with us
           </div>
           <h2 className="text-4xl sm:text-5xl md:text-6xl">
             We&apos;ve got{" "}
