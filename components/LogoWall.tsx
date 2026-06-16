@@ -21,7 +21,6 @@ const LOGOS = [
   { slug: "texas-comfort",         label: "Texas Comfort Systems" },
   { slug: "fastfixtn",             label: "Fast Fix TN" },
   { slug: "tap-dance-wine",        label: "Tap Dance Wine Works" },
-  { slug: "luv-pet-store",         label: "Luv Pet Store" },
 ];
 
 export function LogoWall() {
