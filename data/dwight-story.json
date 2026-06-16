@@ -1,10 +1,10 @@
 {
-  "_note": "Canonical Dwight / BMG brand story. Source of truth for the Guide block (homepage + every Tier-2), the /about page body, and proof-point fragments used across the site. Edit here, not in components.",
+  "_note": "Canonical Dwight / BMG brand story. Source of truth for the /about page body and proof-point fragments used across the site. The homepage Guide block has its own hardcoded copy in Guide.tsx — different audience, different beat. Edit here, not in components.",
 
   "tagline": "Scrappy. ROI-first. Twenty years of getting customers to call.",
 
   "proof_points": [
-    "$450k/month in paid media managed personally",
+    "$450K/month in paid media managed personally",
     "20+ years from green screens to AI-powered search",
     "3.78 ROAS sustained for a $150M packaging distributor",
     "Doubled organic SEO performance for mid-market clients",

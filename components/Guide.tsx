@@ -23,17 +23,23 @@ export function Guide() {
             <span className="accent">Boise Marketing Guy.</span>
           </h2>
           <p className="font-body text-lg text-ink/85 mb-4 leading-relaxed">
-            I started in my mom&apos;s basement on an IBM PC JR, writing
+            The marketing you bought wasn&apos;t supposed to feel like a
+            gamble. I&apos;ve spent twenty years cleaning up after
+            marketing built that way.
+          </p>
+          <p className="font-body text-lg text-ink/85 mb-4 leading-relaxed">
+            I started in my mom&apos;s basement on an IBM PCjr, writing
             databases on green screens before personal computers were
-            normal. Twenty years later I&apos;m still here, except now
-            I&apos;m placing $450,000 a month in paid media and watching
-            every dollar to make sure it&apos;s bringing real customers,
-            not just clicks.
+            normal. I never really stopped. These days I place
+            $450,000 a month in paid media and watch every dollar to
+            make sure it&apos;s bringing in real customers, not just
+            clicks.
           </p>
           <p className="font-body text-lg text-ink/85 mb-8 leading-relaxed">
-            I built Boise Marketing Guy because I&apos;ve seen too many
-            small businesses pour money into marketing that doesn&apos;t
-            move the needle. Yours shouldn&apos;t be one of them.
+            I built Boise Marketing Guy for the owner who&apos;s done
+            gambling. You stay the expert in what you do. I&apos;ll be
+            the one in your corner who knows where the money lands and
+            how to make next month beat this one.
           </p>
 
           <div className="space-y-3 font-body text-base">
