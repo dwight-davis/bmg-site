@@ -37,7 +37,7 @@ export function Empathy() {
             <span className="accent">poor marketing.</span>
           </h2>
           <p className="font-serif italic text-xl md:text-2xl text-ink/80 mt-5">
-            What if you could increase your visibility and sales?
+            What if you could increase your visibility and sales by stopping these?
           </p>
         </div>
 
