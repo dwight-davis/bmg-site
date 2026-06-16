@@ -79,9 +79,9 @@ export function LeadMagnet() {
                   </div>
                   <div className="font-display uppercase tracking-tight leading-[0.92] text-white"
                        style={{ fontSize: "clamp(1.6rem, 2.4vw, 2.4rem)" }}>
-                    Transform <br/>
-                    your <br/>
-                    <span className="accent">marketing.</span>
+                    Tell your <br/>
+                    brand&apos;s <br/>
+                    <span className="accent">story.</span>
                   </div>
                   <div className="font-serif italic text-white/85 mt-4 leading-snug"
                        style={{ fontSize: "clamp(0.75rem, 1vw, 0.9rem)" }}>
@@ -101,13 +101,14 @@ export function LeadMagnet() {
               Free guide
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl mb-5">
-              Get the free 5-step guide.{" "}
-              <span className="accent">No fluff.</span>
+              Get the free{" "}
+              <span className="accent">5-step guide.</span>
             </h2>
             <p className="font-body text-lg text-ink/85 leading-relaxed mb-7">
-              The StoryBrand framework + practical digital tactics for
-              small businesses. The exact thing I&apos;d walk you through if you
-              hired me, written down so you can do it yourself if you want.
+              How to tell your brand&apos;s story and put practical digital
+              tactics behind it. The exact thing I&apos;d walk you through if
+              you hired me, written down so you can do it yourself if you
+              want.
             </p>
 
             {state.phase === "success" ? (
@@ -165,8 +166,8 @@ export function LeadMagnet() {
                   </p>
                 ) : null}
                 <p className="font-body text-xs text-ink/55 leading-relaxed">
-                  No spam. Unsubscribe anytime. Idaho marketing notes, only
-                  when I have something useful to say.
+                  No spam. Unsubscribe anytime. I&apos;ll only email when
+                  I have something useful to share.
                 </p>
               </form>
             )}
