@@ -4,6 +4,7 @@ import {
   getLocations,
   getServiceCategories,
 } from "@/lib/wp-content";
+import { CalendlyButton } from "./CalendlyButton";
 
 // Sitewide footer. Dark navy, mirrors storybrand.com's footer treatment
 // (organized link columns, copyright row at bottom) but expanded to expose
@@ -80,7 +81,7 @@ export function Footer() {
             <ul className="font-body text-sm space-y-2">
               <li><Link className="hover:text-white" href="/about/">About Dwight</Link></li>
               <li><Link className="hover:text-white" href="/blog/">Blog</Link></li>
-              <li><Link className="hover:text-white" href="/schedule/">Schedule a call</Link></li>
+              <li><CalendlyButton className="hover:text-white cursor-pointer">Schedule a call</CalendlyButton></li>
             </ul>
           </div>
 
@@ -93,12 +94,9 @@ export function Footer() {
               Free 30-minute strategy call. No commitment. We figure out if I
               can help, and what it would take.
             </p>
-            <Link
-              href="/schedule/"
-              className="btn-pill bg-red text-white shadow-crisp-sm text-xs px-5 py-3"
-            >
+            <CalendlyButton className="btn-pill bg-red text-white shadow-crisp-sm text-xs px-5 py-3">
               Let&apos;s chat today
-            </Link>
+            </CalendlyButton>
           </div>
         </div>
       </div>

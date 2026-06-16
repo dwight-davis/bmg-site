@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { CalendlyButton } from "./CalendlyButton";
 
 // Explanatory Paragraph from the StoryBrand.ai wireframe. Empathy +
 // authority + transformation in a single block. Lands right before the
@@ -27,7 +27,7 @@ export function Transformation() {
             visibility you deserve.
           </p>
 
-          <Link href="#schedule" className="btn-red">Schedule an appointment</Link>
+          <CalendlyButton className="btn-red">Schedule an appointment</CalendlyButton>
         </div>
       </div>
     </section>

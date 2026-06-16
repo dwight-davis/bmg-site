@@ -5,6 +5,7 @@ import { Nav } from "@/components/Nav";
 import { Plan } from "@/components/Plan";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
+import { CalendlyButton } from "@/components/CalendlyButton";
 
 export const metadata = {
   title: "Marketing Services — Boise Marketing Guy",
@@ -34,9 +35,9 @@ export default function ServicesPage() {
             {totalTiers} service tiers across {categories.length} categories.
             Pick where you are, or skip the menu and schedule a call.
           </p>
-          <Link href="#schedule" className="btn-pill bg-red text-white shadow-crisp mt-9 inline-flex">
+          <CalendlyButton className="btn-pill bg-red text-white shadow-crisp mt-9 inline-flex">
             Schedule an appointment
-          </Link>
+          </CalendlyButton>
         </div>
       </section>
 

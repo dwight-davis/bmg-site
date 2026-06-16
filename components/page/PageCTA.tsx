@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CalendlyButton } from "@/components/CalendlyButton";
 
 // CTA for Tier-2 pages — Calendly book + phone fallback. Per-page heading
 // + sub copy so the close ties to the specific narrative on that page.
@@ -30,12 +31,9 @@ export function PageCTA({
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-          <Link
-            href="https://calendly.com/davisdwight/30-minute-strategy-call"
-            className="btn-pill bg-paper text-ink"
-          >
+          <CalendlyButton className="btn-pill bg-paper text-ink">
             Schedule a strategy call
-          </Link>
+          </CalendlyButton>
           <Link href="tel:+12089575828" className="btn-pill bg-transparent text-white border-2 border-white shadow-none">
             Call Maya: (208) 957-5828
           </Link>

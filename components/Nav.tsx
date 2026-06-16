@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CalendlyButton } from "./CalendlyButton";
 
 export function Nav() {
   return (
@@ -22,9 +23,9 @@ export function Nav() {
           <Link href="#stakes" className="hover:text-white">Results</Link>
         </div>
 
-        <Link href="#schedule" className="btn-pill bg-red text-white shadow-crisp-sm text-xs px-5 py-3">
+        <CalendlyButton className="btn-pill bg-red text-white shadow-crisp-sm text-xs px-5 py-3">
           Let&apos;s chat today
-        </Link>
+        </CalendlyButton>
       </div>
     </nav>
   );
