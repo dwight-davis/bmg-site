@@ -26,10 +26,11 @@ export function PageHero({
   secondaryLabel?: string;
 }) {
   return (
-    <section className="relative bg-navy text-white min-h-[78vh] flex flex-col">
+    <>
       <AnnouncementBar />
-      <Nav />
-      <div className="flex-1 flex items-center">
+      <section className="relative bg-navy text-white min-h-[78vh] flex flex-col">
+        <Nav />
+        <div className="flex-1 flex items-center">
         <div className="mx-auto w-full max-w-[1100px] px-6 pt-28 pb-20 text-center">
           <div className="font-body text-xs uppercase tracking-eyebrow text-paper mb-5">
             {eyebrow}
@@ -57,7 +58,8 @@ export function PageHero({
             </Link>
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 }

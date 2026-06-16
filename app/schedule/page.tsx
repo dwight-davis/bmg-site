@@ -13,8 +13,8 @@ export const metadata = {
 export default function SchedulePage() {
   return (
     <>
+      <AnnouncementBar />
       <section className="relative bg-navy text-white">
-        <AnnouncementBar />
         <Nav />
         <div className="container-content pt-28 pb-16 text-center">
           <div className="font-body text-xs uppercase tracking-eyebrow text-paper mb-4">

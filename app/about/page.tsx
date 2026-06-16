@@ -46,8 +46,8 @@ export default function AboutPage() {
         { name: "Home", url: "/" },
         { name: "About Dwight", url: "/about/" },
       ])} />
+      <AnnouncementBar />
       <section className="relative bg-navy text-white">
-        <AnnouncementBar />
         <Nav />
         <div className="container-content pt-28 pb-20 grid md:grid-cols-[2fr_3fr] gap-12 items-center">
           <div className="flex justify-center md:justify-start">
