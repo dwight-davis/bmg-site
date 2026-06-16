@@ -4,6 +4,7 @@ import { Outcomes } from "@/components/Outcomes";
 import { Trust } from "@/components/Trust";
 import { Guide } from "@/components/Guide";
 import { Plan } from "@/components/Plan";
+import { LeadMagnet } from "@/components/LeadMagnet";
 import { Stakes } from "@/components/Stakes";
 import { Transformation } from "@/components/Transformation";
 import { CTA } from "@/components/CTA";
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Empathy />
       <section id="solution"></section>
       <Outcomes />
+      <LeadMagnet />
       <Trust />
       <Guide />
       <Plan />

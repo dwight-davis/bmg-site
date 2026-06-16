@@ -59,9 +59,10 @@ export function LocationStats({
                 in {cityShortName || "this area"}.
               </span>
             </h2>
-            <p className="font-body text-lg text-ink/85 leading-relaxed">
-              {extras.what_we_do}
-            </p>
+            <div
+              className="wp-body font-body text-lg text-ink/85 leading-relaxed text-left max-w-column mx-auto"
+              dangerouslySetInnerHTML={{ __html: extras.what_we_do }}
+            />
             {extras.region_slug ? (
               <p className="font-body text-sm text-ink/60 mt-6">
                 Part of{" "}

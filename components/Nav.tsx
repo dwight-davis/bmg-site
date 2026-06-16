@@ -21,6 +21,7 @@ export function Nav() {
           <Link href="/about/" className="hover:text-white">About Dwight</Link>
           <Link href="/industries/" className="hover:text-white">Industries</Link>
           <Link href="/blog/" className="hover:text-white">Field notes</Link>
+          <Link href="/contact/" className="hover:text-white">Contact</Link>
         </div>
 
         <CalendlyButton className="btn-pill bg-red text-white shadow-crisp-sm text-xs px-5 py-3">

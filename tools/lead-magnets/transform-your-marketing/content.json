@@ -1,0 +1,146 @@
+{
+  "_note": "Source content for the 5-step lead magnet PDF. Edit here, regenerate with `node tools/lead-magnets/build.mjs` (or run the renderer). Verbatim Dwight voice; StoryBrand framework provides the spine, BMG digital tactics fill each step.",
+  "title": "Transform Your Marketing",
+  "subtitle": "5 Steps to Turn Your Small Business Into a Revenue Machine",
+  "byline": "By Dwight Davis · Boise Marketing Guy",
+  "pages": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "eyebrow": "The Real Problem",
+      "headline": "Most marketing fails because the message is wrong, not the channel.",
+      "paragraphs": [
+        "If you've ever poured money into Google Ads, Facebook, SEO, or a brand-new website and felt like none of it moved the needle, you're not alone. Most small business owners I work with have spent thousands chasing the next channel, and most of them come to me saying the same thing: \"I don't know what's working.\"",
+        "Here's the part nobody told you: it's not the channel that's broken. It's the message. If a customer can't tell, in the first five seconds on your site or in your ad, what you do, who it's for, and why it matters to them, every dollar of paid traffic is leaking out the bottom.",
+        "There's a story-based framework called StoryBrand that fixes this at the root. Then there's the tactical execution that makes it pay. This guide is the simplest version of both, focused on what an Idaho small business actually needs to do this quarter."
+      ]
+    },
+    {
+      "id": "sb-primer",
+      "kind": "primer",
+      "eyebrow": "The Foundation",
+      "headline": "Your customer is the hero. You're the guide.",
+      "paragraphs": [
+        "The StoryBrand framework comes from Don Miller, and it's grounded in how human brains have always made sense of information: as a story. Every effective marketing message in history has the same seven beats."
+      ],
+      "beats": [
+        { "n": "1", "label": "Character", "text": "A specific customer with a clear identity." },
+        { "n": "2", "label": "Problem", "text": "An external pain (the thing they want fixed) plus an internal frustration (how it makes them feel)." },
+        { "n": "3", "label": "Guide", "text": "Someone who has been there, gets it, and has a plan. That's you." },
+        { "n": "4", "label": "Plan", "text": "Three to four clear steps so they know exactly what happens next." },
+        { "n": "5", "label": "Call to Action", "text": "One direct ask, repeated everywhere." },
+        { "n": "6", "label": "Failure", "text": "What it costs them if nothing changes." },
+        { "n": "7", "label": "Success", "text": "The specific outcome they get when they choose you." }
+      ],
+      "closer": "Every page on your site, every ad, every email should follow this arc. The five steps in this guide each ladder back to it."
+    },
+    {
+      "id": "step-1",
+      "kind": "step",
+      "step": "01",
+      "label": "Clarify your story",
+      "headline": "Write the one-liner your customer would say back to you.",
+      "paragraphs": [
+        "Before you spend another dollar on ads or SEO, sit down and write this in a single sentence: \"We help [specific customer] solve [specific problem] so they can [specific outcome].\" If you can't fill in the blanks, your customer can't either. That sentence becomes the hero block on your homepage, the first line of every ad, and the opening line of every sales email."
+      ],
+      "do_this": "Test your one-liner with three actual customers. Ask them to read it and say it back in their words. If they butcher it, it's not clear enough yet.",
+      "dont_do_this": "Don't use insider jargon like 'innovative solutions' or 'cutting-edge digital strategies.' Those phrases are invisible. Your customer skims past them and never lands.",
+      "common_mistake": "Trying to talk to everyone. A vague message reaches no one. A specific message reaches the right people loudly.",
+      "example": "A Boise law firm we worked with rewrote their headline from \"Innovative Legal Solutions\" to \"Idaho families navigating estate planning without the legalese.\" Form fills tripled in 60 days. Same traffic. Different message.",
+      "tool": "StoryBrand.ai will walk you through the seven beats and generate a BrandScript in under 10 minutes. Free. Start there."
+    },
+    {
+      "id": "step-2",
+      "kind": "step",
+      "step": "02",
+      "label": "Invest smartly in paid media",
+      "headline": "Stop treating Google Ads like a slot machine.",
+      "paragraphs": [
+        "Most small businesses I audit are running ads with no idea which keyword, audience, or creative is actually driving calls. They look at total spend and total revenue and either feel okay or feel terrible. That's not a campaign, that's a vibe.",
+        "The math you need is ROAS — return on ad spend. For every dollar in, how many dollars out? Track that per campaign, per ad group, per keyword. Cut the bottom 20% every month. Reinvest in the top 20%. That single discipline is how I sustain 3.78x ROAS for a $150M packaging distributor and how you can move from break-even to profitable on a $500/month budget."
+      ],
+      "do_this": "Set up conversion tracking before you spend. Phone calls (CallRail or similar), form fills, key page views. Without conversion tracking, every report is a guess.",
+      "dont_do_this": "Don't run \"brand awareness\" campaigns until your lead generation pays for itself. Awareness is the reward for businesses that already have a working sales engine.",
+      "common_mistake": "Adding more channels (TikTok! LinkedIn! YouTube!) before the first channel is profitable. Make one channel print money, then add the next.",
+      "example": "An HVAC company in Treasure Valley shut off 60% of their keywords after one ROAS audit. Spend dropped 30%, qualified booked calls went up 15%. Same money, better targeting.",
+      "tool": "Google Ads conversion tracking + Google Analytics 4. Both free. They're not optional. They're the speedometer."
+    },
+    {
+      "id": "step-3",
+      "kind": "step",
+      "step": "03",
+      "label": "Optimize for SEO and AEO",
+      "headline": "Get found in Google. Get cited in AI.",
+      "paragraphs": [
+        "SEO (Search Engine Optimization) and AEO (Answer Engine Optimization) are now two different sports. SEO is showing up in Google's blue links. AEO is being the source ChatGPT, Claude, and Google AI Overviews quote when a customer asks a question. AEO is growing fast. If you're not optimizing for it, your competitors will be the answer.",
+        "Local SEO is still the highest-leverage move for an Idaho business. The Google 3-pack (the three local map results above all other listings) drives most of the call volume for service-based businesses. Getting in there is a function of your Google Business Profile, your reviews, your category, and how often your website mentions the actual locations you serve."
+      ],
+      "do_this": "Fully populate your Google Business Profile. Categories, service areas, photos, hours, posts, products. It's free, it's high-impact, and most businesses leave it half empty.",
+      "dont_do_this": "Don't pay an SEO agency that won't show you their keyword research or their backlink targets in the first meeting. If they're vague about the work, the work is vague.",
+      "common_mistake": "Writing blog posts nobody searches for. Keyword research first, content second. If a topic has zero search volume, it's a hobby, not marketing.",
+      "example": "A local roofer added 12 city-specific service pages (Boise, Meridian, Nampa, Caldwell, etc.) with local keyword research behind each. Six months later, their organic traffic doubled and they ranked in the 3-pack for four of the cities.",
+      "tool": "Google Search Console + Google Business Profile are free and essential. Ahrefs or Semrush if you have a real budget. For AEO, schema markup (especially FAQPage and LocalBusiness) is the leverage point."
+    },
+    {
+      "id": "step-4",
+      "kind": "step",
+      "step": "04",
+      "label": "Leverage social proof",
+      "headline": "Your customers selling for you, in their words.",
+      "paragraphs": [
+        "Reviews and testimonials aren't decoration. They're the single highest-converting element on most service business websites. A customer evaluating two competitors will choose the one with 87 four-and-five-star Google reviews over the one with 12, even if the 12 are better work.",
+        "But the way most businesses ask for reviews is the way most businesses ask for sales: rarely, late, and only when desperate. Build a system. Every closed job, every happy customer, every successful project ends with a friendly ask and a direct link. That's it."
+      ],
+      "do_this": "Build a review request automation. Closed job → wait 48 hours → text or email a one-click link to your Google review. Aim for 70% of customers asked, 30% of those completing.",
+      "dont_do_this": "Don't fake reviews. Google's algorithm catches it, your reputation tanks, and the platforms ban the listing. The shortcut isn't a shortcut.",
+      "common_mistake": "Only displaying five-star reviews. Real businesses have a few three-stars and they look more credible for it. Let the full picture show.",
+      "example": "A local restaurant added a $1 receipt sticker that said \"Tell us how we did → Google Reviews\" with a QR code. They went from 4 new reviews a month to 38. Their organic discovery in Google Maps quadrupled.",
+      "tool": "Birdeye, Podium, NiceJob, or just a free Google review short link. The tool matters less than the discipline of asking every time."
+    },
+    {
+      "id": "step-5",
+      "kind": "step",
+      "step": "05",
+      "label": "Adapt to technological change",
+      "headline": "Build a 30-minute monthly audit so the wheels stay on.",
+      "paragraphs": [
+        "AI search is one year old and is reshaping every channel in this guide. Google Ads is rolling out Performance Max defaults that quietly burn through small business budgets. The platforms keep changing the rules. You don't need to chase every new feature, but you do need a regular checkpoint where you look at what's working and what's not.",
+        "Thirty minutes, once a month, with a coffee. Open Google Ads, look at ROAS by campaign. Open Search Console, look at top queries and top pages. Open your Google Business Profile, check for new reviews and new questions. Open ChatGPT and ask \"Best [your service] in [your city]\" — see if you're cited. If you're not, you have one priority for the month."
+      ],
+      "do_this": "Block the same 30 minutes on your calendar, every month, forever. Same time, same coffee. Make it a habit, not a project.",
+      "dont_do_this": "Don't redesign the website every six months. The data needs time to accumulate. Iterate on copy and offers, not infrastructure.",
+      "common_mistake": "Trying to learn every new tool. Pick the three you'll actually use this quarter and ignore the rest. The marketing podcast economy needs you anxious; you don't have to oblige.",
+      "example": "A local consultant I work with does this every first Monday at 8am. She caught a Google Ads automation glitch last month that was burning $40 a day on a keyword her business had nothing to do with. Thirty minutes of monthly attention saved $1,200 a year.",
+      "tool": "Your calendar, a coffee, and the four free dashboards above. That's the whole stack until your business outgrows it."
+    },
+    {
+      "id": "assessment",
+      "kind": "assessment",
+      "eyebrow": "Score yourself",
+      "headline": "How is your marketing doing right now?",
+      "intro": "Be honest. Rate each step 1 to 5, where 1 means \"I haven't started\" and 5 means \"I've nailed it.\"",
+      "items": [
+        "Step 1 — A clear one-liner your customer would repeat back",
+        "Step 2 — Conversion tracking + ROAS visibility on every paid campaign",
+        "Step 3 — Full Google Business Profile + a local SEO plan",
+        "Step 4 — A review-request system running on autopilot",
+        "Step 5 — A monthly 30-minute marketing audit on the calendar"
+      ],
+      "outro": "Total your score. Under 15? Your marketing is leaking everywhere and there's a lot of upside in fixing it. 15 to 20? You're competent and there are two or three high-leverage moves left. Above 20? You probably don't need me, but if you want a second opinion I'm one click away."
+    },
+    {
+      "id": "about",
+      "kind": "about",
+      "eyebrow": "About the author",
+      "headline": "Dwight Davis",
+      "paragraphs": [
+        "I started in my mom's basement on an IBM PC JR, writing databases on green screens before personal computers were normal. Twenty years later I'm still here, except now I'm placing $450,000 a month in paid media and watching every dollar to make sure it's bringing real customers, not just clicks.",
+        "I've worked with Yellow Pages, the Houston Chronicle, IBM, and QuickBooks, companies that collectively touch about three million small businesses. I've sustained a 3.78x ROAS for a $150M packaging distributor and doubled SEO performance for mid-market clients. I built AI Answer Call, a 24/7 AI voice receptionist that small businesses actually use. None of that matters if your business doesn't get the call.",
+        "Boise Marketing Guy exists because I've seen too many small businesses pour money into marketing that doesn't move the needle. Yours shouldn't be one of them."
+      ],
+      "cta": "Want me to look at where your marketing is leaking? Free 30-minute strategy call. No pitch. I look at your site, your Google profile, and your ads, then tell you the three highest-leverage moves to make this quarter.",
+      "url": "https://boisemarketingguy.com/schedule/",
+      "url_label": "Schedule a call →"
+    }
+  ]
+}

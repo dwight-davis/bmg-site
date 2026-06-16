@@ -81,6 +81,7 @@ export function Footer() {
             <ul className="font-body text-sm space-y-2">
               <li><Link className="hover:text-white" href="/about/">About Dwight</Link></li>
               <li><Link className="hover:text-white" href="/blog/">Blog</Link></li>
+              <li><Link className="hover:text-white" href="/contact/">Contact</Link></li>
               <li><CalendlyButton className="hover:text-white cursor-pointer">Schedule a call</CalendlyButton></li>
             </ul>
           </div>

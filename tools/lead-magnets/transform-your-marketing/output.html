@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Transform Your Marketing — Boise Marketing Guy</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:    #151515;
+    --navy:   #000028;
+    --red:    #e01f26;
+    --paper:  #b4a269;
+    --bg:     #ffffff;
+    --muted:  #f7f7f5;
+    --line:   #e5e5e5;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    padding: 0.75in 0.85in;
+    page-break-after: always;
+    background: var(--bg);
+    position: relative;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  .display {
+    font-family: "Anton", "Helvetica Inserat", Impact, Arial Black, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 0.95;
+    color: var(--navy);
+    margin: 0 0 22px 0;
+  }
+  h1.display { font-size: 52px; }
+  h2.display { font-size: 40px; }
+
+  .eyebrow {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+    color: var(--red);
+    margin-bottom: 14px;
+  }
+
+  .body p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: var(--ink);
+    margin: 0 0 14px 0;
+  }
+  .body.large p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* Cover */
+  .cover {
+    background: var(--navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cover-inner { text-align: center; max-width: 6in; }
+  .logo-box {
+    display: inline-block;
+    background: #ffffff;
+    color: var(--navy);
+    padding: 12px 18px;
+    margin-bottom: 60px;
+  }
+  .logo-line {
+    font-family: "Anton", Impact, sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .logo-line + .logo-line { margin-top: 3px; }
+  .cover-title {
+    font-family: "Anton", Impact, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 72px;
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    margin: 0 0 18px 0;
+  }
+  .cover-sub {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.35;
+    color: rgba(255,255,255,0.92);
+    margin: 0 0 50px 0;
+  }
+  .byline {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--paper);
+    margin: 0;
+  }
+
+  /* Primer */
+  .beats {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .beats li {
+    display: flex;
+    gap: 14px;
+    padding: 14px;
+    background: var(--muted);
+    border-left: 3px solid var(--red);
+  }
+  .beat-n {
+    font-family: "Anton", Impact, sans-serif;
+    color: var(--red);
+    font-size: 28px;
+    line-height: 1;
+    min-width: 24px;
+  }
+  .beat-label {
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .beat-text { font-size: 12.5px; line-height: 1.5; color: var(--ink); }
+  .closer {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink);
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+  }
+
+  /* Step */
+  .step-mark {
+    font-family: "Anton", Impact, sans-serif;
+    font-size: 96px;
+    color: var(--red);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .step-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 4px 0 14px 0;
+  }
+  .callout, .example, .tool {
+    background: var(--muted);
+    padding: 12px 16px;
+    margin: 12px 0;
+    border-left: 3px solid var(--red);
+  }
+  .callout.dont { border-left-color: #8a8a8a; background: #f0f0ed; }
+  .callout.mistake { border-left-color: var(--navy); }
+  .example { border-left-color: var(--paper); }
+  .tool { border-left-color: var(--navy); background: var(--muted); }
+  .callout-tag {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .callout p, .example p, .tool p {
+    font-size: 12.5px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  /* Assessment */
+  .intro, .outro {
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: var(--ink);
+    margin: 0 0 16px 0;
+  }
+  .rating-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .rating-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 12.5px;
+  }
+  .rating-list li:last-child { border-bottom: 1px solid var(--navy); }
+  .item-label { color: var(--ink); padding-right: 16px; }
+  .item-rating {
+    font-family: "Anton", Impact, sans-serif;
+    color: var(--navy);
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+  .outro {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-style: italic;
+  }
+
+  /* About */
+  .final-cta {
+    margin-top: 24px;
+    padding: 22px;
+    background: var(--navy);
+    color: #ffffff;
+    text-align: center;
+  }
+  .final-cta p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0 0 14px 0;
+  }
+  .cta-button {
+    display: inline-block;
+    background: var(--red);
+    color: #ffffff !important;
+    text-decoration: none;
+    font-family: "Anton", Impact, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 14px;
+    padding: 12px 28px;
+    border-radius: 9999px;
+  }
+
+  @page { size: letter; margin: 0; }
+</style>
+</head>
+<body>
+<section class="page cover">
+    <div class="cover-inner">
+      <div class="logo-box">
+        <div class="logo-line">Boise</div>
+        <div class="logo-line">Marketing Guy</div>
+      </div>
+      <h1 class="cover-title">Transform Your Marketing</h1>
+      <p class="cover-sub">5 Steps to Turn Your Small Business Into a Revenue Machine</p>
+      <p class="byline">By Dwight Davis · Boise Marketing Guy</p>
+    </div>
+  </section>
+<section class="page hook">
+    <div class="eyebrow">The Real Problem</div>
+    <h1 class="display">Most marketing fails because the message is wrong, not the channel.</h1>
+    <div class="body large"><p>If you've ever poured money into Google Ads, Facebook, SEO, or a brand-new website and felt like none of it moved the needle, you're not alone. Most small business owners I work with have spent thousands chasing the next channel, and most of them come to me saying the same thing: &quot;I don't know what's working.&quot;</p>
+<p>Here's the part nobody told you: it's not the channel that's broken. It's the message. If a customer can't tell, in the first five seconds on your site or in your ad, what you do, who it's for, and why it matters to them, every dollar of paid traffic is leaking out the bottom.</p>
+<p>There's a story-based framework called StoryBrand that fixes this at the root. Then there's the tactical execution that makes it pay. This guide is the simplest version of both, focused on what an Idaho small business actually needs to do this quarter.</p></div>
+  </section>
+<section class="page primer">
+    <div class="eyebrow">The Foundation</div>
+    <h2 class="display">Your customer is the hero. You're the guide.</h2>
+    <div class="body"><p>The StoryBrand framework comes from Don Miller, and it's grounded in how human brains have always made sense of information: as a story. Every effective marketing message in history has the same seven beats.</p></div>
+    <ol class="beats">
+      <li>
+        <div class="beat-n">1</div>
+        <div>
+          <div class="beat-label">Character</div>
+          <div class="beat-text">A specific customer with a clear identity.</div>
+        </div>
+      </li>
+      <li>
+        <div class="beat-n">2</div>
+        <div>
+          <div class="beat-label">Problem</div>
+          <div class="beat-text">An external pain (the thing they want fixed) plus an internal frustration (how it makes them feel).</div>
+        </div>
+      </li>
+      <li>
+        <div class="beat-n">3</div>
+        <div>
+          <div class="beat-label">Guide</div>
+          <div class="beat-text">Someone who has been there, gets it, and has a plan. That's you.</div>
+        </div>
+      </li>
+      <li>
+        <div class="beat-n">4</div>
+        <div>
+          <div class="beat-label">Plan</div>
+          <div class="beat-text">Three to four clear steps so they know exactly what happens next.</div>
+        </div>
+      </li>
+      <li>
+        <div class="beat-n">5</div>
+        <div>
+          <div class="beat-label">Call to Action</div>
+          <div class="beat-text">One direct ask, repeated everywhere.</div>
+        </div>
+      </li>
+      <li>
+        <div class="beat-n">6</div>
+        <div>
+          <div class="beat-label">Failure</div>
+          <div class="beat-text">What it costs them if nothing changes.</div>
+        </div>
+      </li>
+      <li>
+        <div class="beat-n">7</div>
+        <div>
+          <div class="beat-label">Success</div>
+          <div class="beat-text">The specific outcome they get when they choose you.</div>
+        </div>
+      </li></ol>
+    <p class="closer">Every page on your site, every ad, every email should follow this arc. The five steps in this guide each ladder back to it.</p>
+  </section>
+<section class="page step">
+    <div class="step-mark">01</div>
+    <div class="step-label">Clarify your story</div>
+    <h2 class="display">Write the one-liner your customer would say back to you.</h2>
+    <div class="body"><p>Before you spend another dollar on ads or SEO, sit down and write this in a single sentence: &quot;We help [specific customer] solve [specific problem] so they can [specific outcome].&quot; If you can't fill in the blanks, your customer can't either. That sentence becomes the hero block on your homepage, the first line of every ad, and the opening line of every sales email.</p></div>
+    <div class="callout do"><div class="callout-tag">Do this</div><p>Test your one-liner with three actual customers. Ask them to read it and say it back in their words. If they butcher it, it's not clear enough yet.</p></div>
+    <div class="callout dont"><div class="callout-tag">Don&apos;t do this</div><p>Don't use insider jargon like 'innovative solutions' or 'cutting-edge digital strategies.' Those phrases are invisible. Your customer skims past them and never lands.</p></div>
+    <div class="callout mistake"><div class="callout-tag">Common mistake</div><p>Trying to talk to everyone. A vague message reaches no one. A specific message reaches the right people loudly.</p></div>
+    <div class="example"><div class="callout-tag">Real example</div><p>A Boise law firm we worked with rewrote their headline from &quot;Innovative Legal Solutions&quot; to &quot;Idaho families navigating estate planning without the legalese.&quot; Form fills tripled in 60 days. Same traffic. Different message.</p></div>
+    <div class="tool"><div class="callout-tag">Tool I&apos;d use</div><p>StoryBrand.ai will walk you through the seven beats and generate a BrandScript in under 10 minutes. Free. Start there.</p></div>
+  </section>
+<section class="page step">
+    <div class="step-mark">02</div>
+    <div class="step-label">Invest smartly in paid media</div>
+    <h2 class="display">Stop treating Google Ads like a slot machine.</h2>
+    <div class="body"><p>Most small businesses I audit are running ads with no idea which keyword, audience, or creative is actually driving calls. They look at total spend and total revenue and either feel okay or feel terrible. That's not a campaign, that's a vibe.</p>
+<p>The math you need is ROAS — return on ad spend. For every dollar in, how many dollars out? Track that per campaign, per ad group, per keyword. Cut the bottom 20% every month. Reinvest in the top 20%. That single discipline is how I sustain 3.78x ROAS for a $150M packaging distributor and how you can move from break-even to profitable on a $500/month budget.</p></div>
+    <div class="callout do"><div class="callout-tag">Do this</div><p>Set up conversion tracking before you spend. Phone calls (CallRail or similar), form fills, key page views. Without conversion tracking, every report is a guess.</p></div>
+    <div class="callout dont"><div class="callout-tag">Don&apos;t do this</div><p>Don't run &quot;brand awareness&quot; campaigns until your lead generation pays for itself. Awareness is the reward for businesses that already have a working sales engine.</p></div>
+    <div class="callout mistake"><div class="callout-tag">Common mistake</div><p>Adding more channels (TikTok! LinkedIn! YouTube!) before the first channel is profitable. Make one channel print money, then add the next.</p></div>
+    <div class="example"><div class="callout-tag">Real example</div><p>An HVAC company in Treasure Valley shut off 60% of their keywords after one ROAS audit. Spend dropped 30%, qualified booked calls went up 15%. Same money, better targeting.</p></div>
+    <div class="tool"><div class="callout-tag">Tool I&apos;d use</div><p>Google Ads conversion tracking + Google Analytics 4. Both free. They're not optional. They're the speedometer.</p></div>
+  </section>
+<section class="page step">
+    <div class="step-mark">03</div>
+    <div class="step-label">Optimize for SEO and AEO</div>
+    <h2 class="display">Get found in Google. Get cited in AI.</h2>
+    <div class="body"><p>SEO (Search Engine Optimization) and AEO (Answer Engine Optimization) are now two different sports. SEO is showing up in Google's blue links. AEO is being the source ChatGPT, Claude, and Google AI Overviews quote when a customer asks a question. AEO is growing fast. If you're not optimizing for it, your competitors will be the answer.</p>
+<p>Local SEO is still the highest-leverage move for an Idaho business. The Google 3-pack (the three local map results above all other listings) drives most of the call volume for service-based businesses. Getting in there is a function of your Google Business Profile, your reviews, your category, and how often your website mentions the actual locations you serve.</p></div>
+    <div class="callout do"><div class="callout-tag">Do this</div><p>Fully populate your Google Business Profile. Categories, service areas, photos, hours, posts, products. It's free, it's high-impact, and most businesses leave it half empty.</p></div>
+    <div class="callout dont"><div class="callout-tag">Don&apos;t do this</div><p>Don't pay an SEO agency that won't show you their keyword research or their backlink targets in the first meeting. If they're vague about the work, the work is vague.</p></div>
+    <div class="callout mistake"><div class="callout-tag">Common mistake</div><p>Writing blog posts nobody searches for. Keyword research first, content second. If a topic has zero search volume, it's a hobby, not marketing.</p></div>
+    <div class="example"><div class="callout-tag">Real example</div><p>A local roofer added 12 city-specific service pages (Boise, Meridian, Nampa, Caldwell, etc.) with local keyword research behind each. Six months later, their organic traffic doubled and they ranked in the 3-pack for four of the cities.</p></div>
+    <div class="tool"><div class="callout-tag">Tool I&apos;d use</div><p>Google Search Console + Google Business Profile are free and essential. Ahrefs or Semrush if you have a real budget. For AEO, schema markup (especially FAQPage and LocalBusiness) is the leverage point.</p></div>
+  </section>
+<section class="page step">
+    <div class="step-mark">04</div>
+    <div class="step-label">Leverage social proof</div>
+    <h2 class="display">Your customers selling for you, in their words.</h2>
+    <div class="body"><p>Reviews and testimonials aren't decoration. They're the single highest-converting element on most service business websites. A customer evaluating two competitors will choose the one with 87 four-and-five-star Google reviews over the one with 12, even if the 12 are better work.</p>
+<p>But the way most businesses ask for reviews is the way most businesses ask for sales: rarely, late, and only when desperate. Build a system. Every closed job, every happy customer, every successful project ends with a friendly ask and a direct link. That's it.</p></div>
+    <div class="callout do"><div class="callout-tag">Do this</div><p>Build a review request automation. Closed job → wait 48 hours → text or email a one-click link to your Google review. Aim for 70% of customers asked, 30% of those completing.</p></div>
+    <div class="callout dont"><div class="callout-tag">Don&apos;t do this</div><p>Don't fake reviews. Google's algorithm catches it, your reputation tanks, and the platforms ban the listing. The shortcut isn't a shortcut.</p></div>
+    <div class="callout mistake"><div class="callout-tag">Common mistake</div><p>Only displaying five-star reviews. Real businesses have a few three-stars and they look more credible for it. Let the full picture show.</p></div>
+    <div class="example"><div class="callout-tag">Real example</div><p>A local restaurant added a $1 receipt sticker that said &quot;Tell us how we did → Google Reviews&quot; with a QR code. They went from 4 new reviews a month to 38. Their organic discovery in Google Maps quadrupled.</p></div>
+    <div class="tool"><div class="callout-tag">Tool I&apos;d use</div><p>Birdeye, Podium, NiceJob, or just a free Google review short link. The tool matters less than the discipline of asking every time.</p></div>
+  </section>
+<section class="page step">
+    <div class="step-mark">05</div>
+    <div class="step-label">Adapt to technological change</div>
+    <h2 class="display">Build a 30-minute monthly audit so the wheels stay on.</h2>
+    <div class="body"><p>AI search is one year old and is reshaping every channel in this guide. Google Ads is rolling out Performance Max defaults that quietly burn through small business budgets. The platforms keep changing the rules. You don't need to chase every new feature, but you do need a regular checkpoint where you look at what's working and what's not.</p>
+<p>Thirty minutes, once a month, with a coffee. Open Google Ads, look at ROAS by campaign. Open Search Console, look at top queries and top pages. Open your Google Business Profile, check for new reviews and new questions. Open ChatGPT and ask &quot;Best [your service] in [your city]&quot; — see if you're cited. If you're not, you have one priority for the month.</p></div>
+    <div class="callout do"><div class="callout-tag">Do this</div><p>Block the same 30 minutes on your calendar, every month, forever. Same time, same coffee. Make it a habit, not a project.</p></div>
+    <div class="callout dont"><div class="callout-tag">Don&apos;t do this</div><p>Don't redesign the website every six months. The data needs time to accumulate. Iterate on copy and offers, not infrastructure.</p></div>
+    <div class="callout mistake"><div class="callout-tag">Common mistake</div><p>Trying to learn every new tool. Pick the three you'll actually use this quarter and ignore the rest. The marketing podcast economy needs you anxious; you don't have to oblige.</p></div>
+    <div class="example"><div class="callout-tag">Real example</div><p>A local consultant I work with does this every first Monday at 8am. She caught a Google Ads automation glitch last month that was burning $40 a day on a keyword her business had nothing to do with. Thirty minutes of monthly attention saved $1,200 a year.</p></div>
+    <div class="tool"><div class="callout-tag">Tool I&apos;d use</div><p>Your calendar, a coffee, and the four free dashboards above. That's the whole stack until your business outgrows it.</p></div>
+  </section>
+<section class="page assessment">
+    <div class="eyebrow">Score yourself</div>
+    <h2 class="display">How is your marketing doing right now?</h2>
+    <p class="intro">Be honest. Rate each step 1 to 5, where 1 means &quot;I haven't started&quot; and 5 means &quot;I've nailed it.&quot;</p>
+    <ol class="rating-list"><li>
+          <span class="item-label">Step 1 — A clear one-liner your customer would repeat back</span>
+          <span class="item-rating">1 &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; 5</span>
+        </li><li>
+          <span class="item-label">Step 2 — Conversion tracking + ROAS visibility on every paid campaign</span>
+          <span class="item-rating">1 &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; 5</span>
+        </li><li>
+          <span class="item-label">Step 3 — Full Google Business Profile + a local SEO plan</span>
+          <span class="item-rating">1 &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; 5</span>
+        </li><li>
+          <span class="item-label">Step 4 — A review-request system running on autopilot</span>
+          <span class="item-rating">1 &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; 5</span>
+        </li><li>
+          <span class="item-label">Step 5 — A monthly 30-minute marketing audit on the calendar</span>
+          <span class="item-rating">1 &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; 5</span>
+        </li></ol>
+    <p class="outro">Total your score. Under 15? Your marketing is leaking everywhere and there's a lot of upside in fixing it. 15 to 20? You're competent and there are two or three high-leverage moves left. Above 20? You probably don't need me, but if you want a second opinion I'm one click away.</p>
+  </section>
+<section class="page about">
+    <div class="eyebrow">About the author</div>
+    <h2 class="display">Dwight Davis</h2>
+    <div class="body"><p>I started in my mom's basement on an IBM PC JR, writing databases on green screens before personal computers were normal. Twenty years later I'm still here, except now I'm placing $450,000 a month in paid media and watching every dollar to make sure it's bringing real customers, not just clicks.</p>
+<p>I've worked with Yellow Pages, the Houston Chronicle, IBM, and QuickBooks, companies that collectively touch about three million small businesses. I've sustained a 3.78x ROAS for a $150M packaging distributor and doubled SEO performance for mid-market clients. I built AI Answer Call, a 24/7 AI voice receptionist that small businesses actually use. None of that matters if your business doesn't get the call.</p>
+<p>Boise Marketing Guy exists because I've seen too many small businesses pour money into marketing that doesn't move the needle. Yours shouldn't be one of them.</p></div>
+    <div class="final-cta">
+      <p>Want me to look at where your marketing is leaking? Free 30-minute strategy call. No pitch. I look at your site, your Google profile, and your ads, then tell you the three highest-leverage moves to make this quarter.</p>
+      <a class="cta-button" href="https://boisemarketingguy.com/schedule/">Schedule a call →</a>
+    </div>
+  </section>
+</body>
+</html>

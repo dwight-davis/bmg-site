@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   out.push(url("/services/", { priority: 0.9 }));
   out.push(url("/about/", { priority: 0.8 }));
   out.push(url("/schedule/", { priority: 0.9 }));
+  out.push(url("/contact/", { priority: 0.85 }));
   out.push(url("/blog/", { priority: 0.8, changefreq: "weekly" }));
   out.push(url("/industries/", { priority: 0.8 }));
 
