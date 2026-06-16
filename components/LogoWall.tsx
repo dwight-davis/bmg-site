@@ -2,23 +2,26 @@ import Image from "next/image";
 
 // Logo wall for the /about page. Mixed past/current — recognizable
 // enterprise marks signal 20-year-real-chops, recent client marks signal
-// "still in the trenches with small businesses." One strip, not two,
-// because the visitor reads it as cumulative track record.
+// "still in the trenches with small businesses." One strip with flex-wrap
+// so the row count is natural and the last row centers gracefully.
 
 const LOGOS = [
-  // Past / large work (named first because recognition does the work)
-  { slug: "ibm",                 label: "IBM" },
-  { slug: "quickbooks",          label: "QuickBooks" },
-  { slug: "tiffany",             label: "Tiffany & Co." },
-  { slug: "academy",             label: "Academy Sports" },
-  { slug: "houston-chronicle",   label: "Houston Chronicle" },
-  { slug: "ypcom",               label: "YP.com" },
-  // Recent / current client work
-  { slug: "container-packaging", label: "Container and Packaging" },
-  { slug: "idaho-roasting",      label: "Idaho Roasting" },
-  { slug: "houston-ssda",        label: "Houston SSD Attorney" },
-  { slug: "fastfixtn",           label: "Fast Fix TN" },
-  { slug: "txheatandair",        label: "TX Heat & Air" },
+  // Past / large work (recognition does the work)
+  { slug: "ibm",                   label: "IBM" },
+  { slug: "quickbooks",            label: "QuickBooks" },
+  { slug: "tiffany",               label: "Tiffany & Co." },
+  { slug: "ringcentral",           label: "RingCentral" },
+  { slug: "salsa-labs",            label: "Salsa Labs" },
+  { slug: "houston-chronicle",     label: "Houston Chronicle" },
+  // Current major clients
+  { slug: "container-packaging",   label: "Container and Packaging" },
+  { slug: "idaho-roasting",        label: "Idaho Roasting" },
+  // Current SMB client roster
+  { slug: "heritage-construction", label: "Heritage Construction Co." },
+  { slug: "texas-comfort",         label: "Texas Comfort Systems" },
+  { slug: "fastfixtn",             label: "Fast Fix TN" },
+  { slug: "tap-dance-wine",        label: "Tap Dance Wine Works" },
+  { slug: "luv-pet-store",         label: "Luv Pet Store" },
 ];
 
 export function LogoWall() {
@@ -36,11 +39,14 @@ export function LogoWall() {
             calling me up this month. Same job: get the phone to ring.
           </p>
         </div>
-        <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-x-8 gap-y-12 items-center max-w-5xl mx-auto">
+        {/* Flex-wrap with centered justification — last row centers naturally
+            regardless of total count. Each slot is a fixed-width box so logos
+            sit consistently on every breakpoint. */}
+        <ul className="flex flex-wrap justify-center items-center gap-x-10 gap-y-12 max-w-5xl mx-auto">
           {LOGOS.map((l) => (
             <li
               key={l.slug}
-              className="flex items-center justify-center h-20"
+              className="flex items-center justify-center w-32 sm:w-36 md:w-40 h-20"
               title={l.label}
             >
               <Image
