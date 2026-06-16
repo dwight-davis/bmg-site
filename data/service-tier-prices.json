@@ -1,0 +1,8 @@
+{
+  "_note": "Per-tier pricing keyed by service_tier slug. Schema per entry:\n  amount: number (USD whole dollars)\n  interval: 'one-time' | 'monthly' | 'quarterly' | 'yearly' | 'project'\n  starting_at: boolean (true => prefix with 'Starting at'; false => exact)\n  setup_fee: number | null (one-time fee in addition to recurring)\n  note: string | null (one-line clarification shown under the price)\nTiers without an entry render a 'Schedule a call to scope pricing' CTA instead of a price card. Add entries here as we recover them from the WP DB.",
+
+  "_examples": {
+    "seo__local-gold": { "amount": 1500, "interval": "monthly", "starting_at": false, "setup_fee": null, "note": null },
+    "seo__gmb":        { "amount": 750,  "interval": "one-time", "starting_at": false, "setup_fee": null, "note": null }
+  }
+}

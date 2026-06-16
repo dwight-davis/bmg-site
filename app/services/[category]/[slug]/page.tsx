@@ -1,38 +1,36 @@
 import { notFound } from "next/navigation";
 import {
+  getServiceCategories,
   getServiceTiers,
   getServiceTier,
   firstParagraph,
 } from "@/lib/wp-content";
+import { getPriceForTier } from "@/lib/service-tier-prices";
 import { getServiceTierSpec } from "@/lib/page-specs";
 import { SERVICE_CATEGORY_LABELS } from "@/lib/wp-types";
 import { PageHero } from "@/components/page/PageHero";
-import { PainList } from "@/components/page/PainList";
-import { Guide } from "@/components/Guide";
-import { Plan } from "@/components/Plan";
 import { WpBody } from "@/components/page/WpBody";
-import { PageStakes } from "@/components/page/PageStakes";
+import { PricingCard } from "@/components/page/PricingCard";
+import { RelatedTiers } from "@/components/page/RelatedTiers";
 import { PageCTA } from "@/components/page/PageCTA";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/schema/JsonLd";
 import { breadcrumbSchema, serviceSchema } from "@/lib/seo";
 
-// Static generate every service tier. The WP route segments are
-// "/services/<category>/<slug>/" and the slug already carries the
-// "<category>__" prefix, which we preserve byte-for-byte.
+// Service-tier page (the storefront for one specific offer). Restructured
+// 2026-06-15 per Dwight: the previous template put PainList + a full
+// Guide block + a generic 3-step Plan before the actual content, which
+// meant every visitor had to scroll past 2,400 words of empathy and bio
+// before reaching what they came for. New shape leads with the content,
+// surfaces price, exposes siblings, and closes — like a product page.
+
+// Static generate every tier from the WP export.
 export function generateStaticParams() {
   return getServiceTiers().map((t) => {
     const category = t.slug.split("__")[0];
     return { category, slug: t.slug };
   });
 }
-
-const DEFAULT_SERVICE_PAINS = [
-  "You've paid for this kind of service before and the results were murky at best.",
-  "The reports you got didn't tell you whether the phone was ringing.",
-  "Your competitors are getting the result this is supposed to deliver and you're not.",
-  "You're not sure if you need this exact level of service or something different.",
-];
 
 export async function generateMetadata({
   params,
@@ -59,65 +57,65 @@ export default async function ServiceTierPage({
   if (!item) notFound();
 
   const spec = getServiceTierSpec(slug);
+  const price = getPriceForTier(slug);
   const catLabel = SERVICE_CATEGORY_LABELS[category] ?? category.replace(/-/g, " ");
   const firstP = firstParagraph(item.content_html, 240);
 
+  // Pull sibling tiers in the same category for the related row at the
+  // bottom of the page.
+  const cats = getServiceCategories();
+  const thisCat = cats.find((c) => c.slug === category);
+  const siblings = thisCat?.tiers ?? [];
+
   return (
     <>
-      <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "/" },
-        { name: "Services", url: "/services/" },
-        { name: catLabel, url: `/services/${category}/` },
-        { name: item.title, url: `/services/${category}/${slug}/` },
-      ])} />
-      <JsonLd data={serviceSchema({
-        name: item.title,
-        description: item.excerpt || firstP,
-        url: `/services/${category}/${slug}/`,
-        category: catLabel,
-      })} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services/" },
+          { name: catLabel, url: `/services/${category}/` },
+          { name: item.title, url: `/services/${category}/${slug}/` },
+        ])}
+      />
+      <JsonLd
+        data={serviceSchema({
+          name: item.title,
+          description: item.excerpt || firstP,
+          url: `/services/${category}/${slug}/`,
+          category: catLabel,
+        })}
+      />
+
       <PageHero
         eyebrow={spec.hero_eyebrow ?? catLabel}
-        h1={spec.hero_h1 ?? item.title.toUpperCase() + "."}
+        h1={spec.hero_h1 ?? item.title}
         h1Accent={spec.hero_accent ?? ""}
         sub={spec.hero_sub ?? (item.excerpt || firstP)}
+        primaryLabel="Schedule a call"
+        secondaryHref="#what-you-get"
+        secondaryLabel="See what's included"
       />
 
-      <PainList
-        eyebrow={spec.empathy_eyebrow ?? "I know how this feels"}
-        heading={spec.empathy_heading ?? "You've been here before."}
-        headingAccent={spec.empathy_heading_accent ?? "This time it works."}
-        pains={spec.pains ?? DEFAULT_SERVICE_PAINS}
-        summary={spec.empathy_summary}
-      />
+      {/* Content first — what the visitor came for. */}
+      <section id="what-you-get">
+        <WpBody html={item.content_html} />
+      </section>
 
-      <Guide />
-      <Plan />
+      <PricingCard price={price} tierTitle={item.title} />
 
-      <WpBody
-        eyebrow="What's included"
-        heading="What you actually"
-        headingAccent="get."
-        html={item.content_html}
-      />
-
-      <PageStakes
-        negBody={
-          spec.stakes_neg ??
-          "Another quarter spent on marketing that doesn't move the number you actually care about."
-        }
-        posBody={
-          spec.stakes_pos ??
-          "Real visibility, real calls, and a monthly report that proves it."
-        }
+      <RelatedTiers
+        current={item}
+        siblings={siblings}
+        categorySlug={category}
+        categoryLabel={catLabel}
       />
 
       <PageCTA
-        heading={spec.cta_heading ?? `Let's talk about whether ${item.title}`}
-        headingAccent={spec.cta_accent ?? "is right for you."}
+        heading={spec.cta_heading ?? `Ready to talk about ${item.title.toLowerCase()}?`}
+        headingAccent={spec.cta_accent ?? ""}
         sub={
           spec.cta_sub ??
-          "Free 30-minute call. I look at what you're actually trying to grow and tell you whether this tier fits or something else does."
+          "30-minute call. We talk about your business, whether this tier fits, and what the next step looks like."
         }
       />
 
