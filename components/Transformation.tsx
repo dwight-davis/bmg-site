@@ -18,7 +18,7 @@ export function Transformation() {
 
           <p className="font-body text-lg md:text-xl leading-relaxed text-ink/90 mb-10">
             Are you tired of pouring money into marketing strategies that
-            yield little to no results? At Boise Marketing Guy, we know how
+            yield little to no results? At Boise Marketing Guy, I know how
             frustrating it can be to feel invisible in today&apos;s
             competitive landscape. I get to know you and your business,
             then craft a tailored digital marketing strategy designed to
@@ -26,6 +26,18 @@ export function Transformation() {
             from seeing measurable growth and finally gaining the
             visibility you deserve.
           </p>
+
+          {/* Punchy tagline above the CTA — SB pattern. */}
+          <div className="mb-8 max-w-xl mx-auto">
+            <p className="font-display uppercase tracking-tight text-ink leading-tight"
+               style={{ fontSize: "clamp(1.25rem, 2vw, 1.6rem)" }}>
+              The phone rings for the business{" "}
+              <span className="accent">that decided.</span>
+            </p>
+            <p className="font-serif italic text-ink/70 mt-3 text-base md:text-lg">
+              Don&apos;t let another quiet quarter be the one you remember.
+            </p>
+          </div>
 
           <CalendlyButton className="btn-red">Schedule an appointment</CalendlyButton>
         </div>

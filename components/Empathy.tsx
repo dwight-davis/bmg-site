@@ -51,6 +51,19 @@ export function Empathy() {
         </div>
 
         <div className="text-center mt-14">
+          {/* Punchy tagline above the CTA — SB pattern */}
+          <div className="max-w-xl mx-auto mb-8">
+            <p
+              className="font-display uppercase tracking-tight text-ink leading-tight"
+              style={{ fontSize: "clamp(1.25rem, 2vw, 1.6rem)" }}
+            >
+              The phone rings for the business{" "}
+              <span className="accent">that decided.</span>
+            </p>
+            <p className="font-serif italic text-ink/70 mt-3 text-base md:text-lg">
+              Don&apos;t let another quiet quarter be the one you remember.
+            </p>
+          </div>
           <CalendlyButton className="btn-red">Schedule an appointment</CalendlyButton>
         </div>
       </div>

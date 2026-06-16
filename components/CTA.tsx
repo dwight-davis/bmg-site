@@ -17,17 +17,6 @@ export function CTA() {
           If you&apos;re overwhelmed by marketing, I&apos;m your solution.
         </p>
 
-        {/* Punchy tagline above the CTA — the cost-of-waiting frame */}
-        <div className="max-w-2xl mx-auto mb-10">
-          <p className="font-display uppercase tracking-tight text-paper leading-tight"
-             style={{ fontSize: "clamp(1.25rem, 2vw, 1.6rem)" }}>
-            The phone rings for the business that decided.
-          </p>
-          <p className="font-serif italic text-white/85 mt-3 text-lg">
-            Don&apos;t let another quiet quarter be the one you remember.
-          </p>
-        </div>
-
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
           <CalendlyButton className="btn-pill bg-paper text-ink">
             Schedule a strategy call
