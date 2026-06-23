@@ -138,6 +138,35 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Marketing Guy family — other regional locations */}
+      <div className="border-t border-white/10">
+        <div className="mx-auto w-full max-w-[1280px] px-6 py-10">
+          <div className="font-display uppercase tracking-eyebrow text-xs text-white mb-5">
+            Other Marketing Guy Locations
+          </div>
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-3 font-body text-sm">
+            <li>
+              <span className="block">
+                <span className="block font-semibold text-red">Boise, ID</span>
+                <span className="block text-xs text-white/40">boisemarketingguy.com (this site)</span>
+              </span>
+            </li>
+            <li>
+              <a href="https://slcmarketingguy.com/" className="hover:text-white">
+                <span className="block font-semibold text-white">Salt Lake City, UT</span>
+                <span className="block text-xs text-white/40">slcmarketingguy.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://birminghammarketingguy.com/" className="hover:text-white">
+                <span className="block font-semibold text-white">Birmingham, AL</span>
+                <span className="block text-xs text-white/40">birminghammarketingguy.com</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       {/* Bottom row */}
       <div className="border-t border-white/10">
         <div className="mx-auto w-full max-w-[1280px] px-6 py-6 flex flex-wrap items-center gap-4 justify-between font-body text-xs text-white/40">

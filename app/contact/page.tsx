@@ -125,6 +125,28 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Other Marketing Guy markets */}
+      <section className="bg-bg-muted">
+        <div className="container-content section">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="eyebrow mb-3">Other Markets</div>
+            <h2 className="text-3xl md:text-4xl mb-4">
+              Salt Lake City &amp; <span className="accent">Birmingham.</span>
+            </h2>
+            <p className="font-body text-base text-ink/75 leading-relaxed max-w-xl mx-auto">
+              The Marketing Guy family also serves Salt Lake City via{" "}
+              <a href="https://slcmarketingguy.com/" className="text-red font-semibold underline underline-offset-4">
+                slcmarketingguy.com
+              </a>{" "}
+              and Birmingham via{" "}
+              <a href="https://birminghammarketingguy.com/" className="text-red font-semibold underline underline-offset-4">
+                birminghammarketingguy.com
+              </a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
