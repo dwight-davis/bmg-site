@@ -30,7 +30,7 @@ gcloud --project="$PROJECT" run deploy "$SERVICE" \
   --min-instances=1 \
   --max-instances=10 \
   --timeout=60 \
-  --set-secrets="RESEND_API_KEY=resend-api-key:latest,STRIPE_WEBHOOK_SECRET=stripe-webhook-secret-live:latest,STRIPE_WEBHOOK_SECRET_TEST=stripe-webhook-secret-test:latest"
+  --set-secrets="RESEND_API_KEY=resend-api-key:latest,STRIPE_WEBHOOK_SECRET=stripe-webhook-secret-live:latest,STRIPE_WEBHOOK_SECRET_TEST=stripe-webhook-secret-test:latest,STRIPE_API_KEY=stripe-api-key:latest"
 
 echo ""
 echo "Service URL:"
