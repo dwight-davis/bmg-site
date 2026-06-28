@@ -45,8 +45,8 @@ export function Guide() {
           <div className="space-y-3 font-body text-base">
             <div>
               <span className="text-ink/60 text-sm">Talk to Maya, my 24/7 assistant</span>{" "}
-              <a href="tel:+12089575828" className="font-bold text-ink hover:text-red">
-                (208) 957-5828
+              <a href="tel:+12089923986" className="font-bold text-ink hover:text-red">
+                (208) 992-3986
               </a>
             </div>
             <div>

@@ -6,14 +6,14 @@ export const SITE_URL = "https://boisemarketingguy.com";
 export const SITE_NAME = "Boise Marketing Guy";
 export const FOUNDER_NAME = "Dwight Davis";
 export const FOUNDER_TITLE = "Founder, Boise Marketing Guy";
-export const PUBLIC_PHONE = "+1-208-957-5828";
+export const PUBLIC_PHONE = "+1-208-992-3986";
 export const PUBLIC_EMAIL = "dwight@boisemarketingguy.com";
 export const AREA_CITY = "Boise";
 export const AREA_REGION = "ID";
 export const AREA_COUNTRY = "US";
 
 export const SAMEAS = [
-  "https://www.linkedin.com/in/dwightdavis/",
+  "https://www.linkedin.com/in/davisdwight/",
 ];
 
 // Organization schema. Goes on every page.

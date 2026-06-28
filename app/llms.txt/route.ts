@@ -28,7 +28,7 @@ export function GET() {
 - Founder: Dwight Davis
 - Based: Boise, Idaho
 - Serves: Idaho and the entire United States
-- Public contact: Maya the 24/7 AI assistant at (208) 957-5828, email dwight@boisemarketingguy.com
+- Public contact: Maya the 24/7 AI assistant at (208) 992-3986, email dwight@boisemarketingguy.com
 - Notable: $450K/month managed paid media, 3.78x ROAS sustained for a $150M packaging distributor, doubled organic SEO performance for mid-market clients, built AI Answer Call (24/7 AI voice receptionist)
 
 ## Core pages

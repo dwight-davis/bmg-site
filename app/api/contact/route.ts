@@ -1,13 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
 
-// Contact-form endpoint. Same shape as the lead-magnet handler — log to
-// stdout (Cloud Run captures), best-effort forward to bmg-crm-api so it
-// lands as a prospect with source = 'contact_form', return success.
+// Contact-form endpoint. Validates input, then (a) logs the lead to stdout so
+// it's recoverable from Cloud Run logs even if email fails, and (b) emails the
+// submission to dwight@cadrey.boisemarketingguy.com via Resend.
+// The previous BMG-CRM /contact/submit forward was removed 2026-06-28 as part
+// of the BMG → Cadrey migration cleanup (no CRM call here anymore).
 
-const CRM_API =
-  process.env.BMG_CRM_API_URL ||
-  "https://bmg-crm-api-580501752464.us-central1.run.app";
-const TICK_SECRET = process.env.CRM_TICK_SECRET || "";
+const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "dwight@cadrey.boisemarketingguy.com";
+const FROM_EMAIL = process.env.CONTACT_FROM_EMAIL || "Boise Marketing Guy <notifications@mail.boisemarketingguy.com>";
+const RESEND_API_KEY = process.env.RESEND_API_KEY || "";
 
 const EMAIL_RX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -39,6 +41,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error: "message_required" }, { status: 400 });
   }
 
+  // Stdout snapshot — Cloud Run logs capture this so a lead survives even if
+  // Resend is down.
   console.log(JSON.stringify({
     type: "contact_form_submit",
     name,
@@ -49,24 +53,32 @@ export async function POST(req: NextRequest) {
     received_at: new Date().toISOString(),
   }));
 
-  try {
-    await fetch(`${CRM_API}/contact/submit`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        ...(TICK_SECRET ? { "X-Tick-Secret": TICK_SECRET } : {}),
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        business_name: businessName || null,
+  // Email Dwight. Best-effort — if the send fails, the visitor still sees
+  // success (the stdout log is the recovery path).
+  if (RESEND_API_KEY) {
+    try {
+      const resend = new Resend(RESEND_API_KEY);
+      const lines = [
+        `From:     ${name} <${email}>`,
+        businessName ? `Business: ${businessName}` : null,
+        `Source:   Contact form (boisemarketingguy.com/contact)`,
+        `Received: ${new Date().toISOString()}`,
+        "",
+        "Message:",
         message,
-        source: "contact_form",
-      }),
-      signal: AbortSignal.timeout(3000),
-    });
-  } catch (e) {
-    console.warn(`crm forward failed: ${(e as Error).message}`);
+      ].filter(Boolean).join("\n");
+      await resend.emails.send({
+        from: FROM_EMAIL,
+        to: [TO_EMAIL],
+        replyTo: email,
+        subject: `Contact form: ${name}${businessName ? " — " + businessName : ""}`,
+        text: lines,
+      });
+    } catch (e) {
+      console.error("contact form: resend send failed:", e);
+    }
+  } else {
+    console.warn("contact form: RESEND_API_KEY not set; lead logged but not emailed");
   }
 
   return NextResponse.json({ ok: true });

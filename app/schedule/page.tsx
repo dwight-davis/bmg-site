@@ -52,8 +52,8 @@ export default function SchedulePage() {
               right questions and get a call on the calendar.
             </p>
             <div className="mt-6 flex flex-col sm:flex-row gap-4 items-center justify-center">
-              <Link href="tel:+12089575828" className="btn-pill bg-ink text-white">
-                Call Maya: (208) 957-5828
+              <Link href="tel:+12089923986" className="btn-pill bg-ink text-white">
+                Call Maya: (208) 992-3986
               </Link>
               <Link href="mailto:dwight@boisemarketingguy.com" className="btn-pill bg-transparent text-ink border-2 border-ink shadow-none">
                 Email instead

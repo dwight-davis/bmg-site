@@ -41,8 +41,8 @@ export function Footer() {
             <div className="font-body text-sm mt-6 space-y-1.5">
               <div>
                 <span className="text-white/50 text-xs">Talk to Maya, 24/7</span>{" "}
-                <a className="hover:text-white" href="tel:+12089575828">
-                  (208) 957-5828
+                <a className="hover:text-white" href="tel:+12089923986">
+                  (208) 992-3986
                 </a>
               </div>
               <div>

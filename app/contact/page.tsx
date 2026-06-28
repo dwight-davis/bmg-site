@@ -36,7 +36,7 @@ export default function ContactPage() {
         <div className="container-content section">
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <a
-              href="tel:+12089575828"
+              href="tel:+12089923986"
               className="block bg-white border-2 border-ink p-7 shadow-crisp hover:-translate-y-0.5 transition-transform"
             >
               <div className="font-display text-red text-5xl mb-4 leading-none">
@@ -50,7 +50,7 @@ export default function ContactPage() {
                 questions, and gets the right next step on the calendar.
               </p>
               <div className="font-body text-base font-bold text-ink">
-                (208) 957-5828
+                (208) 992-3986
               </div>
             </a>
 

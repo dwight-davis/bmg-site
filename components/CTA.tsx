@@ -21,8 +21,8 @@ export function CTA() {
           <CalendlyButton className="btn-pill bg-paper text-ink">
             Schedule a strategy call
           </CalendlyButton>
-          <Link href="tel:+12089575828" className="btn-pill bg-transparent text-white border-2 border-white shadow-none">
-            Call Maya: (208) 957-5828
+          <Link href="tel:+12089923986" className="btn-pill bg-transparent text-white border-2 border-white shadow-none">
+            Call Maya: (208) 992-3986
           </Link>
         </div>
 

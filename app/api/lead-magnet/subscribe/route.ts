@@ -1,19 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
 
 // Lead-magnet capture endpoint. Records the email + optional first name and
 // returns the PDF URL. The frontend reveals the download link in-place on
 // success.
 //
-// Persistence path (best-effort): forwards the lead to bmg-crm-api so it
-// lands as a prospect row in BigQuery, enrolled with source =
-// 'lead_magnet_5_steps'. If the CRM API is unreachable we still return
-// success so the visitor isn't punished for backend hiccups, and we log
-// the lead to stdout (Cloud Run logs capture it).
+// Notification path: emails Dwight at dwight@cadrey.boisemarketingguy.com via
+// Resend so he knows who downloaded the guide. Stdout log captures the lead
+// even if the email fails. The previous BMG-CRM /lead-magnet/subscribe
+// forward was removed 2026-06-28 as part of the BMG → Cadrey migration.
 
-const CRM_API =
-  process.env.BMG_CRM_API_URL ||
-  "https://bmg-crm-api-580501752464.us-central1.run.app";
-const TICK_SECRET = process.env.CRM_TICK_SECRET || "";
+const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "dwight@cadrey.boisemarketingguy.com";
+const FROM_EMAIL = process.env.CONTACT_FROM_EMAIL || "Boise Marketing Guy <notifications@mail.boisemarketingguy.com>";
+const RESEND_API_KEY = process.env.RESEND_API_KEY || "";
 
 const EMAIL_RX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -33,7 +32,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error: "invalid_email" }, { status: 400 });
   }
 
-  // Stdout for log aggregation. Even if the downstream forward fails this
+  // Stdout for log aggregation. Even if the downstream email fails this
   // ensures the lead is recoverable from Cloud Run logs.
   console.log(JSON.stringify({
     type: "lead_magnet_subscribe",
@@ -44,25 +43,28 @@ export async function POST(req: NextRequest) {
     received_at: new Date().toISOString(),
   }));
 
-  // Best-effort forward to CRM API. Don't block the user if it fails.
-  try {
-    await fetch(`${CRM_API}/lead-magnet/subscribe`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        ...(TICK_SECRET ? { "X-Tick-Secret": TICK_SECRET } : {}),
-      },
-      body: JSON.stringify({
-        email,
-        first_name: firstName || null,
-        business_name: businessName || null,
-        source: "lead_magnet_5_steps",
-      }),
-      // Short timeout — don't make the visitor wait for the CRM if it's slow.
-      signal: AbortSignal.timeout(3000),
-    });
-  } catch (e) {
-    console.warn(`crm forward failed: ${(e as Error).message}`);
+  // Notify Dwight via Resend.
+  if (RESEND_API_KEY) {
+    try {
+      const resend = new Resend(RESEND_API_KEY);
+      const lines = [
+        `From:     ${firstName ? firstName + " " : ""}<${email}>`,
+        businessName ? `Business: ${businessName}` : null,
+        `Source:   Lead magnet — Transform Your Marketing (5 steps)`,
+        `Received: ${new Date().toISOString()}`,
+      ].filter(Boolean).join("\n");
+      await resend.emails.send({
+        from: FROM_EMAIL,
+        to: [TO_EMAIL],
+        replyTo: email,
+        subject: `Lead magnet download: ${firstName || email}${businessName ? " — " + businessName : ""}`,
+        text: lines,
+      });
+    } catch (e) {
+      console.error("lead-magnet: resend send failed:", e);
+    }
+  } else {
+    console.warn("lead-magnet: RESEND_API_KEY not set; lead logged but not emailed");
   }
 
   return NextResponse.json({
