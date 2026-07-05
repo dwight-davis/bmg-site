@@ -38,7 +38,7 @@ export default function SchedulePage() {
         <div className="container-content py-12">
           <div className="bg-white border-2 border-ink shadow-crisp p-2">
             <iframe
-              src="https://calendly.com/davisdwight/30-minute-strategy-call?hide_landing_page_details=1&hide_gdpr_banner=1"
+              src="https://calendly.com/davisdwight/boise-marketing-guy-1-1?hide_landing_page_details=1&hide_gdpr_banner=1"
               title="Schedule a 30-minute strategy call with Dwight Davis"
               className="w-full"
               style={{ height: "1100px", border: 0 }}

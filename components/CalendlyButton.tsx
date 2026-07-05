@@ -12,7 +12,7 @@
 import { useEffect, useRef } from "react";
 
 const CALENDLY_URL =
-  "https://calendly.com/davisdwight/30-minute-strategy-call";
+  "https://calendly.com/davisdwight/boise-marketing-guy-1-1";
 
 declare global {
   interface Window {

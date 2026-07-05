@@ -40,7 +40,7 @@ const FROM_EMAIL =
   "Boise Marketing Guy <notifications@mail.boisemarketingguy.com>";
 const ONBOARDING_CALENDLY_URL =
   process.env.ONBOARDING_CALENDLY_URL ||
-  "https://calendly.com/davisdwight/30-minute-strategy-call";
+  "https://calendly.com/davisdwight/boise-marketing-guy-1-1";
 const BILLING_PORTAL_URL =
   process.env.BMG_BILLING_PORTAL_URL ||
   "https://billing.stripe.com/p/login/4gM14o0jg1Sn6Ip5yMfQI00";
