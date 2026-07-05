@@ -1,4 +1,4 @@
-import { CalendlyButton } from "./CalendlyButton";
+import { SchedulingButton } from "./SchedulingButton";
 
 // Empathy & Competency block from the StoryBrand.ai wireframe. Real proof
 // points from Dwight's brand story sit on the left; verified LinkedIn
@@ -78,7 +78,7 @@ export function Trust() {
         </div>
 
         <div className="flex justify-center">
-          <CalendlyButton className="btn-red">Schedule an appointment</CalendlyButton>
+          <SchedulingButton className="btn-red">Schedule an appointment</SchedulingButton>
         </div>
       </div>
     </section>

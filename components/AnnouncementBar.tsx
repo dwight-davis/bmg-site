@@ -1,4 +1,4 @@
-import { CalendlyButton } from "./CalendlyButton";
+import { SchedulingButton } from "./SchedulingButton";
 
 // Thin red bar pinned above the nav. Adds chrome density that mirrors
 // storybrand.com's "Get StoryBrand Certified — Next Training" bar.
@@ -11,9 +11,9 @@ export function AnnouncementBar() {
         <span className="font-body text-xs sm:text-sm font-bold uppercase tracking-eyebrow">
           Free 30-minute strategy call. No commitment.
         </span>
-        <CalendlyButton className="font-body text-xs sm:text-sm font-bold uppercase tracking-eyebrow underline underline-offset-4 hover:no-underline">
+        <SchedulingButton className="font-body text-xs sm:text-sm font-bold uppercase tracking-eyebrow underline underline-offset-4 hover:no-underline">
           Book yours →
-        </CalendlyButton>
+        </SchedulingButton>
       </div>
     </div>
   );

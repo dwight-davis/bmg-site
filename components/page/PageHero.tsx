@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { Nav } from "@/components/Nav";
-import { CalendlyButton } from "@/components/CalendlyButton";
+import { SchedulingButton } from "@/components/SchedulingButton";
 
 // Tier-2 hero. Same chrome as the homepage hero (announcement bar + nav on
 // the navy background, dual pill CTA), but no portrait — the layout is
@@ -47,9 +47,9 @@ export function PageHero({
             {sub}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center mt-10">
-            <CalendlyButton className="btn-pill bg-red text-white shadow-crisp">
+            <SchedulingButton className="btn-pill bg-red text-white shadow-crisp">
               {primaryLabel}
-            </CalendlyButton>
+            </SchedulingButton>
             <Link
               href={secondaryHref}
               className="btn-pill bg-transparent text-white border-2 border-white shadow-none"

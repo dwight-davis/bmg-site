@@ -1,4 +1,4 @@
-import { CalendlyButton } from "@/components/CalendlyButton";
+import { SchedulingButton } from "@/components/SchedulingButton";
 import { TierPrice, formatPrice } from "@/lib/service-tier-prices";
 
 // Pricing card for service-tier pages. Two states:
@@ -43,9 +43,9 @@ export function PricingCard({
                   </p>
                 ) : null}
                 <div className="mt-8">
-                  <CalendlyButton className="btn-pill bg-red text-white shadow-crisp">
+                  <SchedulingButton className="btn-pill bg-red text-white shadow-crisp">
                     Get started
-                  </CalendlyButton>
+                  </SchedulingButton>
                 </div>
                 <p className="font-body text-xs text-ink/50 mt-6">
                   30-minute call to confirm fit. No commitment.
@@ -62,9 +62,9 @@ export function PricingCard({
                   number.
                 </p>
                 <div className="mt-8">
-                  <CalendlyButton className="btn-pill bg-red text-white shadow-crisp">
+                  <SchedulingButton className="btn-pill bg-red text-white shadow-crisp">
                     Schedule a call
-                  </CalendlyButton>
+                  </SchedulingButton>
                 </div>
               </>
             )}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CalendlyButton } from "./CalendlyButton";
+import { SchedulingButton } from "./SchedulingButton";
 
 export function CTA() {
   return (
@@ -18,9 +18,9 @@ export function CTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-          <CalendlyButton className="btn-pill bg-paper text-ink">
+          <SchedulingButton className="btn-pill bg-paper text-ink">
             Schedule a strategy call
-          </CalendlyButton>
+          </SchedulingButton>
           <Link href="tel:+12089923986" className="btn-pill bg-transparent text-white border-2 border-white shadow-none">
             Call Maya: (208) 992-3986
           </Link>

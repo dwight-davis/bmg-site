@@ -1,4 +1,4 @@
-import { CalendlyButton } from "./CalendlyButton";
+import { SchedulingButton } from "./SchedulingButton";
 
 // Stakes / pain section. Lifted from the StoryBrand.ai wireframe verbatim:
 // 8 pains laid out in two columns with red bullet dots, headline call to
@@ -64,7 +64,7 @@ export function Empathy() {
               Don&apos;t let another quiet quarter be the one you remember.
             </p>
           </div>
-          <CalendlyButton className="btn-red">Schedule an appointment</CalendlyButton>
+          <SchedulingButton className="btn-red">Schedule an appointment</SchedulingButton>
         </div>
       </div>
     </section>

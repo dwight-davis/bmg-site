@@ -1,4 +1,4 @@
-import { CalendlyButton } from "./CalendlyButton";
+import { SchedulingButton } from "./SchedulingButton";
 
 // Value Proposition section, from the StoryBrand.ai wireframe: the four
 // outcomes a customer gets when they work with us. Light icon column over
@@ -38,7 +38,7 @@ export function Outcomes() {
         </div>
 
         <div className="flex justify-center">
-          <CalendlyButton className="btn-red">Schedule an appointment</CalendlyButton>
+          <SchedulingButton className="btn-red">Schedule an appointment</SchedulingButton>
         </div>
       </div>
     </section>

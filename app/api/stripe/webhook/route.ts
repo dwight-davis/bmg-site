@@ -38,9 +38,9 @@ const NOTIFY_EMAIL =
 const FROM_EMAIL =
   process.env.CONTACT_FROM_EMAIL ||
   "Boise Marketing Guy <notifications@mail.boisemarketingguy.com>";
-const ONBOARDING_CALENDLY_URL =
-  process.env.ONBOARDING_CALENDLY_URL ||
-  "https://calendly.com/davisdwight/boise-marketing-guy-1-1";
+const ONBOARDING_SCHEDULING_URL =
+  process.env.ONBOARDING_SCHEDULING_URL ||
+  "https://app.onecal.io/b/dwight-davis/boise-marketing-guy";
 const BILLING_PORTAL_URL =
   process.env.BMG_BILLING_PORTAL_URL ||
   "https://billing.stripe.com/p/login/4gM14o0jg1Sn6Ip5yMfQI00";
@@ -156,14 +156,14 @@ export async function POST(req: NextRequest) {
     greeting,
     productName,
     amountStr,
-    calendlyUrl: ONBOARDING_CALENDLY_URL,
+    schedulingUrl: ONBOARDING_SCHEDULING_URL,
     billingPortalUrl: BILLING_PORTAL_URL,
   });
   const welcomeText = renderWelcomeText({
     greeting,
     productName,
     amountStr,
-    calendlyUrl: ONBOARDING_CALENDLY_URL,
+    schedulingUrl: ONBOARDING_SCHEDULING_URL,
     billingPortalUrl: BILLING_PORTAL_URL,
   });
 

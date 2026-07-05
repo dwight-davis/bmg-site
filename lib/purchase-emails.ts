@@ -15,7 +15,7 @@ export type WelcomeArgs = {
   greeting: string;
   productName: string | null;
   amountStr: string; // e.g. "$1,500.00" or "" when no amount available
-  calendlyUrl: string;
+  schedulingUrl: string;
   billingPortalUrl: string;
 };
 
@@ -60,7 +60,7 @@ Here is what happens next:
 
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto 28px auto;">
 <tr><td align="center" bgcolor="#1e40af" style="border-radius:6px;">
-<a href="${a.calendlyUrl}" target="_blank" style="display:inline-block; padding:14px 28px; color:#ffffff; text-decoration:none; font-weight:600; font-size:16px;">Book your kickoff</a>
+<a href="${a.schedulingUrl}" target="_blank" style="display:inline-block; padding:14px 28px; color:#ffffff; text-decoration:none; font-weight:600; font-size:16px;">Book your kickoff</a>
 </td></tr>
 </table>
 
@@ -100,7 +100,7 @@ export function renderWelcomeText(a: WelcomeArgs): string {
     `Welcome aboard. Your purchase came through.\n\n` +
     productLine +
     `Here is what happens next:\n\n` +
-    `  1. Pick a kickoff slot here: ${a.calendlyUrl}\n` +
+    `  1. Pick a kickoff slot here: ${a.schedulingUrl}\n` +
     `     Thirty minutes, on Zoom, recorded.\n` +
     `  2. Before we meet I will look at your site and pull a short read on where you stand.\n` +
     `  3. On the call we walk through what I found, agree on the first move, ` +

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AnnouncementBar } from "./AnnouncementBar";
 import { Nav } from "./Nav";
-import { CalendlyButton } from "./CalendlyButton";
+import { SchedulingButton } from "./SchedulingButton";
 
 export function Hero() {
   return (
@@ -33,7 +33,7 @@ export function Hero() {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <CalendlyButton className="btn-red">Schedule an appointment</CalendlyButton>
+              <SchedulingButton className="btn-red">Schedule an appointment</SchedulingButton>
               <Link href="#solution" className="btn-pill bg-transparent text-white border-2 border-white shadow-none">
                 See how it works
               </Link>

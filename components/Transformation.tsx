@@ -1,4 +1,4 @@
-import { CalendlyButton } from "./CalendlyButton";
+import { SchedulingButton } from "./SchedulingButton";
 
 // Explanatory Paragraph from the StoryBrand.ai wireframe. Empathy +
 // authority + transformation in a single block. Lands right before the
@@ -39,7 +39,7 @@ export function Transformation() {
             </p>
           </div>
 
-          <CalendlyButton className="btn-red">Schedule an appointment</CalendlyButton>
+          <SchedulingButton className="btn-red">Schedule an appointment</SchedulingButton>
         </div>
       </div>
     </section>

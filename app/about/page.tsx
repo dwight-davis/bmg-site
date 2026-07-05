@@ -7,7 +7,7 @@ import { Nav } from "@/components/Nav";
 import { Plan } from "@/components/Plan";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
-import { CalendlyButton } from "@/components/CalendlyButton";
+import { SchedulingButton } from "@/components/SchedulingButton";
 import { LogoWall } from "@/components/LogoWall";
 import { JsonLd } from "@/components/schema/JsonLd";
 import { personSchema, breadcrumbSchema } from "@/lib/seo";
@@ -74,9 +74,9 @@ export default function AboutPage() {
             <p className="font-serif italic text-white/85 mt-6 text-xl md:text-2xl leading-snug">
               {story.tagline}
             </p>
-            <CalendlyButton className="btn-pill bg-red text-white shadow-crisp mt-8 inline-flex">
+            <SchedulingButton className="btn-pill bg-red text-white shadow-crisp mt-8 inline-flex">
               Schedule an appointment
-            </CalendlyButton>
+            </SchedulingButton>
           </div>
         </div>
       </section>
