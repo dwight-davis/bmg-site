@@ -1,6 +1,12 @@
 import Script from "next/script";
 
-export function GoogleAnalytics({ measurementId }: { measurementId: string }) {
+export function GoogleAnalytics({
+  measurementId,
+  adsId,
+}: {
+  measurementId: string;
+  adsId?: string;
+}) {
   if (!measurementId) return null;
   return (
     <>
@@ -14,6 +20,7 @@ export function GoogleAnalytics({ measurementId }: { measurementId: string }) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${measurementId}', { send_page_view: false });
+          ${adsId ? `gtag('config', '${adsId}');` : ""}
         `}
       </Script>
     </>
