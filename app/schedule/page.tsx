@@ -34,19 +34,19 @@ export default function SchedulePage() {
       </section>
 
       <section className="bg-bg">
-        <div className="container-content py-16">
-          <div className="text-center">
-            <a
-              href="https://app.onecal.io/b/dwight-davis/boise-marketing-guy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-pill bg-red text-white shadow-crisp inline-flex text-lg px-10 py-5"
-            >
-              Book my 30-minute call
-            </a>
+        <div className="container-content py-12">
+          <div className="bg-white border-2 border-ink shadow-crisp p-2">
+            <iframe
+              src="https://app.onecal.io/b/dwight-davis/boise-marketing-guy"
+              title="Schedule a 30-minute strategy call with Dwight Davis"
+              width="100%"
+              height="700"
+              frameBorder={0}
+              loading="lazy"
+            />
           </div>
 
-          <div className="mt-14 text-center">
+          <div className="mt-12 text-center">
             <p className="font-body text-base text-ink/80 max-w-xl mx-auto leading-relaxed">
               Time doesn&apos;t work? Maya picks up 24/7. She&apos;ll ask the
               right questions and get a call on the calendar.
