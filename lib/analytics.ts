@@ -1,5 +1,5 @@
 // GA4 measurement + typed event tracker for boisemarketingguy.com.
-export const GA_MEASUREMENT_ID = "G-EQTX5D2YWR";
+export const GA_MEASUREMENT_ID = "G-Y69YDFKSEH";
 
 // Google Ads conversion account for boisemarketingguy.com.
 export const GOOGLE_ADS_ID = "AW-16573408846";
