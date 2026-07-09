@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { JsonLd } from "@/components/schema/JsonLd";
 import { orgSchema, localBusinessSchema, SITE_URL, SITE_NAME } from "@/lib/seo";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { RouteListener } from "@/components/analytics/RouteListener";
+import { GA_MEASUREMENT_ID } from "@/lib/analytics";
 
 export const metadata: Metadata = {
   title: {
@@ -53,8 +56,12 @@ export default function RootLayout({
             identity regardless of which URL they land on first. */}
         <JsonLd data={orgSchema()} />
         <JsonLd data={localBusinessSchema()} />
+        <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
       </head>
-      <body className="bg-bg text-ink font-body antialiased">{children}</body>
+      <body className="bg-bg text-ink font-body antialiased">
+        <RouteListener measurementId={GA_MEASUREMENT_ID} />
+        {children}
+      </body>
     </html>
   );
 }
