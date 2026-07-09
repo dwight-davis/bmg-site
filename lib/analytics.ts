@@ -1,6 +1,10 @@
 // GA4 measurement + typed event tracker for boisemarketingguy.com.
 export const GA_MEASUREMENT_ID = "G-Y69YDFKSEH";
 
+// Consolidated "Marketing Guys" Google Tag — loaded alongside the
+// site-specific GA4 so Google Ads sees its expected anchor tag.
+export const CONSOLIDATED_TAG_ID = "G-J7MTYCW1PQ";
+
 // Google Ads conversion account for boisemarketingguy.com.
 export const GOOGLE_ADS_ID = "AW-16573408846";
 export const ADS_BOOKING_CONVERSION_LABEL = "K08HCKLJ380cEM7M6N49";

@@ -3,9 +3,11 @@ import Script from "next/script";
 export function GoogleAnalytics({
   measurementId,
   adsId,
+  consolidatedId,
 }: {
   measurementId: string;
   adsId?: string;
+  consolidatedId?: string;
 }) {
   if (!measurementId) return null;
   return (
@@ -20,6 +22,7 @@ export function GoogleAnalytics({
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${measurementId}', { send_page_view: false });
+          ${consolidatedId ? `gtag('config', '${consolidatedId}', { send_page_view: false });` : ""}
           ${adsId ? `gtag('config', '${adsId}');` : ""}
         `}
       </Script>
