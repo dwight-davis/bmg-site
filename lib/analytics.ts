@@ -7,7 +7,7 @@ export const CONSOLIDATED_TAG_ID = "G-J7MTYCW1PQ";
 
 // Google Ads conversion account for boisemarketingguy.com.
 export const GOOGLE_ADS_ID = "AW-16573408846";
-export const ADS_BOOKING_CONVERSION_LABEL = "K08HCKLJ380cEM7M6N49";
+export const ADS_BOOKING_CONVERSION_LABEL = "oCUICLu64M0cEM7M6N49";
 
 declare global {
   interface Window {
