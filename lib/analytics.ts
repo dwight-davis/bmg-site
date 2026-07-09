@@ -17,7 +17,21 @@ export function trackEvent(action: string, params: Record<string, unknown> = {})
   window.gtag("event", action, params);
 }
 
-export function trackAdsConversion(label: string): void {
+export function trackAdsConversion(
+  label: string,
+  opts: { value?: number; currency?: string; transactionId?: string } = {},
+): void {
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;
-  window.gtag("event", "conversion", { send_to: `${GOOGLE_ADS_ID}/${label}` });
+  const { value = 10.0, currency = "USD", transactionId } = opts;
+  const txId =
+    transactionId ??
+    (typeof crypto !== "undefined" && "randomUUID" in crypto
+      ? crypto.randomUUID()
+      : `${Date.now()}-${Math.random().toString(36).slice(2)}`);
+  window.gtag("event", "conversion", {
+    send_to: `${GOOGLE_ADS_ID}/${label}`,
+    value,
+    currency,
+    transaction_id: txId,
+  });
 }
