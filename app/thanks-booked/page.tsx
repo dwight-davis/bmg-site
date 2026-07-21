@@ -2,6 +2,7 @@ import Link from "next/link";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { ThanksBookedTracker } from "@/components/ThanksBookedTracker";
 
 export const metadata = {
   title: "You're booked — Boise Marketing Guy",
@@ -14,6 +15,7 @@ export const metadata = {
 export default function ThanksBookedPage() {
   return (
     <>
+      <ThanksBookedTracker />
       <AnnouncementBar />
       <section className="relative bg-navy text-white">
         <Nav />

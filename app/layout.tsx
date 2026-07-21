@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { JsonLd } from "@/components/schema/JsonLd";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { RouteListener } from "@/components/RouteListener";
 import { orgSchema, localBusinessSchema, SITE_URL, SITE_NAME } from "@/lib/seo";
 import { GA_MEASUREMENT_ID } from "@/lib/analytics";
 
@@ -57,7 +58,10 @@ export default function RootLayout({
         <JsonLd data={localBusinessSchema()} />
         <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
       </head>
-      <body className="bg-bg text-ink font-body antialiased">{children}</body>
+      <body className="bg-bg text-ink font-body antialiased">
+        <RouteListener measurementId={GA_MEASUREMENT_ID} />
+        {children}
+      </body>
     </html>
   );
 }

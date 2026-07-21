@@ -1,6 +1,7 @@
 import Script from "next/script";
 
-// Standalone GA4 tag. Loaded afterInteractive so it never blocks paint.
+// Standalone GA4 tag. send_page_view disabled here so RouteListener can fire
+// page_view on every route change (App Router doesn't trigger a full reload).
 export function GoogleAnalytics({ measurementId }: { measurementId: string }) {
   if (!measurementId) return null;
   return (
@@ -13,7 +14,7 @@ export function GoogleAnalytics({ measurementId }: { measurementId: string }) {
         {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${measurementId}');`}
+gtag('config', '${measurementId}', { send_page_view: false });`}
       </Script>
     </>
   );
