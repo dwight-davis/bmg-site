@@ -57,6 +57,7 @@ export default function RootLayout({
         <JsonLd data={orgSchema()} />
         <JsonLd data={localBusinessSchema()} />
         <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
+        <script async src="https://app.cadrey.ai/widget.js" data-cadrey-key="f28181a59ff64e64a0e1ff14014edb29"></script>
       </head>
       <body className="bg-bg text-ink font-body antialiased">
         <RouteListener measurementId={GA_MEASUREMENT_ID} />
