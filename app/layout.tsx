@@ -3,6 +3,8 @@ import "./globals.css";
 import { JsonLd } from "@/components/schema/JsonLd";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { RouteListener } from "@/components/RouteListener";
+import { CookieBanner } from "@/components/CookieBanner";
+import { CadreyChat } from "@/components/CadreyChat";
 import { orgSchema, localBusinessSchema, SITE_URL, SITE_NAME } from "@/lib/seo";
 import { GA_MEASUREMENT_ID } from "@/lib/analytics";
 
@@ -57,11 +59,12 @@ export default function RootLayout({
         <JsonLd data={orgSchema()} />
         <JsonLd data={localBusinessSchema()} />
         <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
-        <script async src="https://app.cadrey.ai/widget.js" data-cadrey-key="f28181a59ff64e64a0e1ff14014edb29"></script>
       </head>
       <body className="bg-bg text-ink font-body antialiased">
         <RouteListener measurementId={GA_MEASUREMENT_ID} />
+        <CadreyChat />
         {children}
+        <CookieBanner />
       </body>
     </html>
   );

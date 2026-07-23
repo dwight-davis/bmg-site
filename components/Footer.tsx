@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ManageCookiePreferencesButton } from "./ManageCookiePreferencesButton";
 import {
   getIndustries,
   getLocations,
@@ -177,6 +178,9 @@ export function Footer() {
             <Link className="hover:text-white/70" href="/privacy/">Privacy</Link>
             <Link className="hover:text-white/70" href="/terms/">Terms</Link>
             <Link className="hover:text-white/70" href="/accessibility/">Accessibility</Link>
+            <Link className="hover:text-white/70" href="/cookie-policy/">Cookies</Link>
+            <ManageCookiePreferencesButton className="hover:text-white/70" />
+            <Link className="hover:text-white/70" href="/do-not-sell/">Do Not Sell</Link>
           </div>
         </div>
       </div>
